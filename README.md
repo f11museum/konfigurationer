@@ -1,0 +1,2 @@
+# konfigurationer
+Blandade konfigurationsfiler
