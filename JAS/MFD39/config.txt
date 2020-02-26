@@ -1,6 +1,6 @@
-/2;n;127.0.0.1 34556/ # this tells it to use ethernet for the moment
-/3;n;127.0.0.1 34557/
-/4;n;127.0.0.1 34558/
+/2;n;127.0.0.1 34556/ # Vänster MFD
+/3;n;127.0.0.1 34557/ # Höger MFD
+/4;n;127.0.0.1 34558/ # Mitten MFD
 
 # The indicated pitch on the panel for the first vacuum instrument
 2.0.A1;0;AO_TEXT;0;500;100;900;sim/cockpit/gyros/the_ind_deg3;0.0;-1.0;1.0;0;
@@ -52,3 +52,4 @@
 #	sim/multiplayer/position/plane1_x	double	y	meters	Plane 1 x location
 #	sim/multiplayer/position/plane1_y	double	y	meters	Plane 1 y location
 #	sim/multiplayer/position/plane1_z	double	y	meters	Plane 1 z location
+
