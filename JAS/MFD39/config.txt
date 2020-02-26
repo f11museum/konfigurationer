@@ -1,0 +1,54 @@
+/2;n;127.0.0.1 34556/ # this tells it to use ethernet for the moment
+/3;n;127.0.0.1 34557/
+/4;n;127.0.0.1 34558/
+
+# The indicated pitch on the panel for the first vacuum instrument
+2.0.A1;0;AO_TEXT;0;500;100;900;sim/cockpit/gyros/the_ind_deg3;0.0;-1.0;1.0;0;
+3.0.A1;0;AO_TEXT;0;500;100;900;sim/cockpit/gyros/the_ind_deg3;0.0;-1.0;1.0;0;
+4.0.A1;0;AO_TEXT;0;500;100;900;sim/cockpit/gyros/the_ind_deg3;0.0;-1.0;1.0;0;
+
+#psi_vac_ind_degm	float	740+	yes	degrees_magnetic	The indicated heading on the panel for the first vacuum instrument
+2.0.A2;0;AO_TEXT;0;500;100;900;sim/cockpit/gyros/psi_ind_degm3;0.0;-1.0;1.0;0;
+3.0.A2;0;AO_TEXT;0;500;100;900;sim/cockpit/gyros/psi_ind_degm3;0.0;-1.0;1.0;0;
+4.0.A2;0;AO_TEXT;0;500;100;900;sim/cockpit/gyros/psi_ind_degm3;0.0;-1.0;1.0;0;
+
+#phi_vac_ind_deg	float	740+	yes	degrees	The indicated roll on the panel for the first vacuum instrument
+2.0.A3;0;AO_TEXT;0;500;100;900;sim/cockpit/gyros/phi_ind_deg3;0.0;-1.0;1.0;0;
+3.0.A3;0;AO_TEXT;0;500;100;900;sim/cockpit/gyros/phi_ind_deg3;0.0;-1.0;1.0;0;
+4.0.A3;0;AO_TEXT;0;500;100;900;sim/cockpit/gyros/phi_ind_deg3;0.0;-1.0;1.0;0;
+
+# Indicated airspeed sim/cockpit2/gauges/indicators/airspeed_kts_pilot
+2.0.A4;0;AO_TEXT;0;500;100;900;sim/cockpit2/gauges/indicators/airspeed_kts_pilot;0.0;-1.0;1.0;0;
+#sim/cockpit2/gauges/indicators/altitude_ft_pilot
+2.0.A5;0;AO_TEXT;0;500;100;900;sim/cockpit2/gauges/indicators/altitude_ft_pilot;0.0;-1.0;1.0;0;
+
+#fuel
+2.0.A6;0;AO_TEXT;0;500;100;900;sim/cockpit2/fuel/fuel_quantity[0];0.0;-1.0;1.0;0;
+
+#gload
+2.0.A7;0;AO_TEXT;0;500;100;900;sim/flightmodel/forces/g_nrml;0.0;-1.0;1.0;0;
+
+#gearratio
+2.0.A8;0;AO_TEXT;0;500;100;900;sim/aircraft/parts/acf_gear_deploy[0];0.0;-1.0;1.0;0;
+3.0.A8;0;AO_TEXT;0;500;100;900;sim/aircraft/parts/acf_gear_deploy[0];0.0;-1.0;1.0;0;
+4.0.A8;0;AO_TEXT;0;500;100;900;sim/aircraft/parts/acf_gear_deploy[0];0.0;-1.0;1.0;0;
+
+#Longitude and latitude
+4.0.A9;0;AO_TEXT;0;500;100;900;sim/flightmodel/position/longitude;0.0;-1.0;1.0;0;
+4.0.A10;0;AO_TEXT;0;500;100;900;sim/flightmodel/position/latitude;0.0;-1.0;1.0;0;
+
+
+# Set D13 to an output displaying the status of the pitot switch.
+2.0.D13;0;DO_BOOL;0;0;0;1;sim/cockpit/switches/pitot_heat_on;0;0;1;0;
+
+
+
+
+# Radar
+#sim/flightmodel/position/local_x
+#sim/flightmodel/position/local_y
+#sim/flightmodel/position/local_z
+
+#	sim/multiplayer/position/plane1_x	double	y	meters	Plane 1 x location
+#	sim/multiplayer/position/plane1_y	double	y	meters	Plane 1 y location
+#	sim/multiplayer/position/plane1_z	double	y	meters	Plane 1 z location
