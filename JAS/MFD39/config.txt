@@ -19,7 +19,8 @@
 
 # Indicated airspeed sim/cockpit2/gauges/indicators/airspeed_kts_pilot
 2.0.A4;0;AO_TEXT;0;500;100;900;sim/cockpit2/gauges/indicators/airspeed_kts_pilot;0.0;-1.0;1.0;0;
-#sim/cockpit2/gauges/indicators/altitude_ft_pilot
+
+# Altitude sim/cockpit2/gauges/indicators/altitude_ft_pilot
 2.0.A5;0;AO_TEXT;0;500;100;900;sim/cockpit2/gauges/indicators/altitude_ft_pilot;0.0;-1.0;1.0;0;
 
 #fuel
@@ -37,9 +38,12 @@
 4.0.A9;0;AO_TEXT;0;500;100;900;sim/flightmodel/position/longitude;0.0;-1.0;1.0;0;
 4.0.A10;0;AO_TEXT;0;500;100;900;sim/flightmodel/position/latitude;0.0;-1.0;1.0;0;
 
+#Ground speed sim/flightmodel/position/groundspeed
+4.0.A11;0;AO_TEXT;0;500;100;900;sim/flightmodel/position/groundspeed;0.0;-1.0;1.0;0;
 
-# Set D13 to an output displaying the status of the pitot switch.
-2.0.D13;0;DO_BOOL;0;0;0;1;sim/cockpit/switches/pitot_heat_on;0;0;1;0;
+#Mach speed sim/cockpit2/gauges/indicators/mach_pilot
+2.0.A12;0;AO_TEXT;0;500;100;900;sim/cockpit2/gauges/indicators/mach_pilot;0.0;-1.0;1.0;0;
+
 
 
 
@@ -52,4 +56,3 @@
 #	sim/multiplayer/position/plane1_x	double	y	meters	Plane 1 x location
 #	sim/multiplayer/position/plane1_y	double	y	meters	Plane 1 y location
 #	sim/multiplayer/position/plane1_z	double	y	meters	Plane 1 z location
-
