@@ -34,6 +34,9 @@
 #sidroder
 1.0.A3;0;AI_RAW;1;322;193;403;sim/joystick/yoke_heading_ratio;0;-1.0;1.0;0;
 
+#noshjul
+*sim/operation/override/override_wheel_steer;1;
+1.0.A3;0;AI_RAW;1;322;193;403;sim/flightmodel2/gear/tire_steer_command_deg[0];0;-45.0;45.0;3;
 
 #skevroder
 1.0.A2;0;AI_RAW;1;512;373;632;sim/joystick/yoke_roll_ratio;0;-1.0;1.0;2;
@@ -73,9 +76,6 @@
 #1.0.D39;38;DI_3WAY_2;0;22.5;0;45;sim/flightmodel/controls/flaprqst;0.5;0.0;1.0;0;
 
 ## kabel2
-#noshjul
-*sim/operation/override/override_wheel_steer;0;
-#1.0.A0;0;AI_FILTER;1;450;0;890;sim/flightmodel2/gear/tire_steer_command_deg[0];0;-90.0;90.0;2;
 
 ## Luftbroms
 #ut
@@ -93,7 +93,7 @@
 1.0.D42;0;DI_INPUT_PULLUP;0;0.5;0;1;sim/cockpit2/controls/right_brake_ratio;0;0;1;0;
 #broms vänster
 1.0.D47;0;DI_INPUT_PULLUP;0;0.5;0;1;sim/cockpit2/controls/left_brake_ratio;0;0;1;0;
-1.0.D47;0;DI_INPUT_PULLUP;0;0.5;0;1;sim/cockpit2/controls/right_brake_ratio;0;0;1;0;
+#1.0.D47;0;DI_INPUT_PULLUP;0;0.5;0;1;sim/cockpit2/controls/right_brake_ratio;0;0;1;0;
 
 #broms höger Analog
 #1.0.A15;0;AI_FILTER;0;400;50;800;sim/cockpit2/controls/right_brake_ratio;0;0;1;0;
