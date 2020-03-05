@@ -1,4 +1,4 @@
-﻿# Hash tag is considered a comment, can only be in beginning of sentence
+# Hash tag is considered a comment, can only be in beginning of sentence
 # You must fill in all fields even if analog scales is not used by digital inputs etc...
 
 # masterId.slaveId.Pin;pinExtra;iomode;reverse;center;pinMin;pinMax;xplaneDataRef;xplaneMin;xplaneMax;xplaneExtra;
