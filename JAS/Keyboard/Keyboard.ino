@@ -22,19 +22,19 @@
 
 #include "Keyboard.h"
 
-const int button01 = 2;
-const int button02 = 3;
-const int button03 = 4;
-const int button04 = 5;
+const int button01 = 9;
+const int button02 = 10;
+const int button03 = 14;
+const int button04 = 15;
 
-const int button11 = 6;
+const int button11 = 8;
 const int button12 = 7;
-const int button13 = 8;
-const int button14 = 9;
-const int button15 = 10;
-const int button16 = 14;
+const int button13 = 6;
+const int button14 = 5;
+const int button15 = 4;
+const int button16 = 3;
 
-const int button17 = 15;
+//const int button17 = 2;
 
 bool pressed[25];
 
@@ -52,7 +52,7 @@ void setup() {
   pinMode(button15, INPUT_PULLUP);
   pinMode(button16, INPUT_PULLUP);
   
-  pinMode(button17, INPUT_PULLUP);
+  //pinMode(button17, INPUT_PULLUP);
   // initialize control over the keyboard:
   Keyboard.begin();
 }
@@ -75,16 +75,16 @@ void checkbutton(int button, int key) {
 void loop() {
   checkbutton(button01, KEY_F1);
   checkbutton(button02, KEY_F2);
-  checkbutton(button03, KEY_F10);
-  checkbutton(button04, KEY_F9);
+  checkbutton(button03, KEY_F3);
+  checkbutton(button04, KEY_F4);
   
-  checkbutton(button11, KEY_F8);
-  checkbutton(button12, KEY_F7);
-  checkbutton(button13, KEY_F6);
+  checkbutton(button11, KEY_F5);
+  checkbutton(button12, KEY_F6);
+  checkbutton(button13, KEY_F7);
 
-  checkbutton(button14, KEY_F5);
-  checkbutton(button15, KEY_F1);
-  checkbutton(button16, KEY_F2);
+  checkbutton(button14, KEY_F8);
+  checkbutton(button15, KEY_F9);
+  checkbutton(button16, KEY_F10);
 
-  checkbutton(button17, KEY_F3);
+  //checkbutton(button17, KEY_F3);
 }
