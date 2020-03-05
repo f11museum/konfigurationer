@@ -46,6 +46,12 @@
 3.0.A8;0;AO_TEXT;0;500;100;900;sim/aircraft/parts/acf_gear_deploy[0];0.0;-1.0;1.0;0;
 4.0.A8;0;AO_TEXT;0;500;100;900;sim/aircraft/parts/acf_gear_deploy[0];0.0;-1.0;1.0;0;
 
+#speedbrake
+#sim/cockpit2/controls/speedbrake_ratio
+2.0.A14;0;AO_TEXT;0;500;100;900;sim/cockpit2/controls/speedbrake_ratio;0.0;-1.0;1.0;0;
+3.0.A14;0;AO_TEXT;0;500;100;900;sim/cockpit2/controls/speedbrake_ratio;0.0;-1.0;1.0;0;
+4.0.A14;0;AO_TEXT;0;500;100;900;sim/cockpit2/controls/speedbrake_ratio;0.0;-1.0;1.0;0;
+
 #Longitude and latitude
 4.0.A9;0;AO_TEXT;0;500;100;900;sim/flightmodel/position/longitude;0.0;-1.0;1.0;0;
 4.0.A10;0;AO_TEXT;0;500;100;900;sim/flightmodel/position/latitude;0.0;-1.0;1.0;0;
