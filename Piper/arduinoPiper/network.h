@@ -60,8 +60,8 @@ void loopEthernet() {
   // if there's data available, read a packet
   int packetSize = Udp.parsePacket();
   if (packetSize) {
-    //Serial.print("Received packet of size ");
-    //Serial.println(packetSize);
+    pcSerial.print("Received packet of size ");
+    pcSerial.println(packetSize);
     //Serial.print("From ");
     remote = Udp.remoteIP();
     //for (int i=0; i < 4; i++) {
@@ -167,8 +167,8 @@ void loopEthernet() {
 
 
 void sendDataEth() {
-//  Serial.print("sendDataEth loops:");
-//  Serial.println(loops);
+  pcSerial.print("sendDataEth loops:");
+  pcSerial.println(loops);
   cts = false;
   bool changes = false;
   
@@ -184,15 +184,15 @@ void sendDataEth() {
   }
   char strbuf[32];
 
-//  remote = Udp.remoteIP();
-//    for (int i=0; i < 4; i++) {
-//      Serial.print(remote[i], DEC);
-//      if (i < 3) {
-//        Serial.print(".");
-//      }
-//    }
-//    Serial.print(", port ");
-//    Serial.println(Udp.remotePort());
+  remote = Udp.remoteIP();
+    for (int i=0; i < 4; i++) {
+      Serial.print(remote[i], DEC);
+      if (i < 3) {
+        Serial.print(".");
+      }
+    }
+    Serial.print(", port ");
+    Serial.println(Udp.remotePort());
 
   Udp.beginPacket(Udp.remoteIP(), Udp.remotePort());
 

@@ -16,12 +16,13 @@ void checkPinChanged( int pin) {
 }
 
 void readAnalogPinRaw( int pin) {
-  
+  //pcSerial.println("analograw");
   int currentState = analogRead(pin-DIGITAL_PIN_COUNT);
   
   if (currentState != pinsData[pin]) {
     pin_changed[pin] = CHANGE_COUNT;
     pinsData[pin] = currentState;
+    //pcSerial.println("analograw");
   }
 }
 
@@ -152,7 +153,7 @@ void read4x4(int pin) {
 
 
 void handlePins(int pinArray[], int numberOfPins) {
-
+  //pcSerial.println("handlePins");
   for (int i = 0; i<numberOfPins; i++) {
     switch (pinArray[i]) {
     case 0:    // not configured

@@ -7,7 +7,7 @@
 String type = BOARD;
 
 // Show debug stuff
-//#define TIME_DEBUG 
+#define TIME_DEBUG 
 
 
 #include <avr/wdt.h> // Watchdog interupt // 20 bytes for setup and 2 bytes for each reset, no memory
@@ -167,6 +167,7 @@ void loop() {
                               serialtime = millis();
                               #endif
   if (millis()>frametime && cts) {
+    pcSerial.println("cts");
     frametime = millis() + (1000/FRAMERATE);
     #ifdef TIME_DEBUG
 //    Serial.print("loops:");
