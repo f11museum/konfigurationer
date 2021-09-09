@@ -7,8 +7,8 @@
 String type = BOARD;
 
 // Show debug stuff
-#define TIME_DEBUG 
-
+//#define TIME_DEBUG 
+//#define DEBUG
 
 #include <avr/wdt.h> // Watchdog interupt // 20 bytes for setup and 2 bytes for each reset, no memory
 
@@ -166,8 +166,8 @@ void loop() {
                               aitime = millis() - aitime;
                               serialtime = millis();
                               #endif
-  if (millis()>frametime && cts) {
-    pcSerial.println("cts");
+  if (millis()>frametime) {
+    //pcSerial.println("cts");
     frametime = millis() + (1000/FRAMERATE);
     #ifdef TIME_DEBUG
 //    Serial.print("loops:");
@@ -255,7 +255,7 @@ void loop() {
 
 void ping() {
   #ifdef MASTER
-  chainSerial.print("{100;}");
+  chainSerial.print("{100;");
   chainSerial.print(MASTER_ID);
   chainSerial.println(";}");
   #endif
@@ -389,14 +389,19 @@ void parsePCSerial() {
       waitForData(pcSerial, 3);
       int slaveid = pcSerial.parseInt();
 
-      pcSerial.print("got master");
-      pcSerial.print(masterid);
-      
-      pcSerial.print(" slave");
-      pcSerial.print(slaveid);
-      
+
+                #ifdef DEBUG
+                pcSerial.print("got master");
+                pcSerial.print(masterid);
+                
+                pcSerial.print(" slave");
+                pcSerial.print(slaveid);
+                #endif
       if (masterid == MASTER_ID) {
-        pcSerial.println("data for me or slaves");
+          
+                #ifdef DEBUG
+                pcSerial.println("data for me or slaves");
+                #endif
         // data for me or my slaves
       
         if ( slaveid == 0 ) {
@@ -456,7 +461,9 @@ void relaySerial(int id) {
 void relaySerialFromPC(int id) {
   // relay data forward
   char data;
-  pcSerial.print("replaying message to slaves");
+                #ifdef DEBUG
+                pcSerial.print("replaying message to slaves");
+                #endif
   chainSerial.print("{");
   id = id;
   chainSerial.print(id);
@@ -478,7 +485,9 @@ void doSomething(HardwareSerial& inSerial) {
   // message for me
   char data;
   
-  pcSerial.print("message for me: ");
+                #ifdef DEBUG
+                pcSerial.print("message for me: ");
+                #endif
   waitForData(inSerial, 1);
   data = inSerial.read(); // read the ; char
   waitForData(inSerial, 3);

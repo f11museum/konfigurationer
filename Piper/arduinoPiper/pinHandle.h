@@ -13,6 +13,10 @@ void checkPinChanged( int pin) {
     pin_changed[pin] = CHANGE_COUNT;
     pinsData[pin] = currentState;
   }
+  if (currentState && pinsExtra[pin] == 3) {
+    pin_changed[pin] = CHANGE_COUNT;
+    pinsData[pin] = currentState;
+  }
 }
 
 void readAnalogPinRaw( int pin) {

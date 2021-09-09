@@ -24,7 +24,7 @@
 // Refresh interval. This will read and resend all inputs to fix issues where switches are in one position and xplane is reloaded and think it is another position
 // It will trigger a resend every ms defined by REFRESH_TIME but only for one value at the time. So if you have 20 inputs configured setting REFRESH_TIME to 1000 will take 20s for all values to have be resent.
 // If you want to be able to control switches from within the game and not have them overwritten uncomment this.
-//#define REFRESH_TIME 1000 // refresh interval, comment out to disable
+#define REFRESH_TIME 1000 // refresh interval, comment out to disable
 
 // ############
 // Plugins
@@ -37,7 +37,7 @@
 
 
 // Use ethernet shield
-#define ETHERNET
+//#define ETHERNET
 #ifdef ETHERNET
 #include <Ethernet.h>
 byte mac[] = {
