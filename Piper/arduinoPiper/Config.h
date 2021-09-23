@@ -37,20 +37,20 @@
 
 
 // Use ethernet shield
-//#define ETHERNET
+#define ETHERNET
 #ifdef ETHERNET
 #include <Ethernet.h>
 byte mac[] = {
   0xA8, 0x61, 0x0A, 0xAE, 0x3A, 0xAA
 };
-IPAddress ip(192, 168, 0, 57);
+IPAddress ip(192, 168, 3, 57);
 #endif
 
 // Use TM1637 drivers for 7 segment displays
-#define TM1637
+//#define TM1637
 
 // Servo
-#define SERVO
+//#define SERVO
 
 // Stepper motors
 // NOTE! You need to configure steppermotors in steppermotors.h
