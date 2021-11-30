@@ -12,7 +12,7 @@
 # Linux port:
 #/1;s;/dev/ttyUSB0;
 
-/1;n;192.168.0.77 34555/ # this tells it to use ethernet
+/1;n;192.168.0.78 34555/ # this tells it to use ethernet
 
 
 # Set D13 to an output displaying the status of the pitot switch.
@@ -32,11 +32,11 @@
 
 ## kabel1
 #sidroder
-1.0.A3;0;AI_RAW;1;322;193;403;sim/joystick/yoke_heading_ratio;0;-1.0;1.0;0;
+1.0.A3;0;AI_RAW;0;490;0;970;sim/joystick/yoke_heading_ratio;0;-1.0;1.0;0;
 
 #noshjul
 *sim/operation/override/override_wheel_steer;1;
-1.0.A3;0;AI_RAW;1;322;193;403;sim/flightmodel2/gear/tire_steer_command_deg[0];0;-45.0;45.0;3;
+1.0.A3;0;AI_RAW;0;490;0;970;sim/flightmodel2/gear/tire_steer_command_deg[0];0;-45.0;45.0;3;
 
 #skevroder
 1.0.A2;0;AI_RAW;1;512;373;632;sim/joystick/yoke_roll_ratio;0;-1.0;1.0;2;
@@ -45,7 +45,7 @@
 1.0.A1;0;AI_RAW;1;504;348;621;sim/joystick/yoke_pitch_ratio;0;-1.0;1.0;0;
 
 #gas höger 
-1.0.A4;0;AI_RAW;0;717;89;952;sim/cockpit2/engine/actuators/throttle_ratio_all;0.9;0.0;1.0;0;
+1.0.A4;0;AI_RAW;0;592;89;830;sim/cockpit2/engine/actuators/throttle_ratio_all;0.9;0.0;1.0;0;
 
 #gas vänster
 #1.0.A5;0;AI_RAW;0;450;0;890;sim/cockpit2/engine/actuators/throttle_ratio[0];0.5;0.0;1.0;0;
@@ -79,9 +79,9 @@
 
 ## Luftbroms
 #ut
-1.0.D35;0;DI_INPUT_STEP;0;0.5;0;0;sim/cockpit2/controls/speedbrake_ratio;0;0;1;0;
+1.0.D34;0;DI_INPUT_STEP;0;2.5;0;0;sim/cockpit2/controls/speedbrake_ratio;0;0;1;0;
 #in
-1.0.D34;0;DI_INPUT_STEP;1;0.5;0;0;sim/cockpit2/controls/speedbrake_ratio;0;0;1;0;
+1.0.D35;0;DI_INPUT_STEP;1;2.5;0;0;sim/cockpit2/controls/speedbrake_ratio;0;0;1;0;
 
 
 #avtryckare
