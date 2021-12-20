@@ -5,7 +5,7 @@
 #include <EthernetUdp.h>
 
 
-unsigned int localPort = 34556;      // local port to listen on
+unsigned int localPort = 34555;      // local port to listen on // Remember to use a different port if using multiple masters
 
 // buffers for receiving and sending data
 char packetBuffer[UDP_TX_PACKET_MAX_SIZE];  // buffer to hold incoming packet,
@@ -123,6 +123,9 @@ void loopEthernet() {
           if (substr[0] == 'A') {
             pinNr = pinNr+DIGITAL_PIN_COUNT;
           }
+          if (substr[0] == 'M') {
+            pinNr = pinNr+DIGITAL_PIN_COUNT+ANALOG_PIN_COUNT;
+          }
   //        Serial.print("pinNr:");
   //        Serial.println(pinNr);
   //        Serial.println(substr);
@@ -149,6 +152,9 @@ void loopEthernet() {
           int pinNr = atoi(substr+1);
           if (substr[0] == 'A') {
             pinNr = pinNr+DIGITAL_PIN_COUNT;
+          }
+          if (substr[0] == 'M') {
+            pinNr = pinNr+DIGITAL_PIN_COUNT+ANALOG_PIN_COUNT;
           }
           current = getNextSubStr(packetBuffer, substr, current, ';');
           int value = atoi(substr);
@@ -232,6 +238,18 @@ void sendDataEth() {
     if (pin_changed[i]) {
       pin_changed[i]--;
       Udp.write("A");
+      itoa(i-DIGITAL_PIN_COUNT,strbuf,10);
+      Udp.write(strbuf);
+      Udp.write(" ");
+      itoa(pinsData[i],strbuf,10);
+      Udp.write(strbuf);
+      Udp.write(",");
+    }
+  }
+  for (int i = DIGITAL_PIN_COUNT+ANALOG_PIN_COUNT; i<DIGITAL_PIN_COUNT+ANALOG_PIN_COUNT+MCP_PIN_COUNT; i++) {
+    if (pin_changed[i]) {
+      pin_changed[i]--;
+      Udp.write("M");
       itoa(i-DIGITAL_PIN_COUNT,strbuf,10);
       Udp.write(strbuf);
       Udp.write(" ");

@@ -3,7 +3,6 @@
 // All types of configurations a pin can have is described in "iotypes.h"
 // Not sure if pinHandle is best English, send me an issue on github if you know better name ;)
 
-int pinsConfig[DIGITAL_PIN_COUNT+ANALOG_PIN_COUNT]; // this array keeps the configuration a pin have
 long analogFilter[ANALOG_PIN_COUNT+1][11];
 int analogFilter2[ANALOG_PIN_COUNT];
 
@@ -151,7 +150,7 @@ void read4x4(int pin) {
 }
 
 
-void handlePins(int pinArray[], int numberOfPins) {
+void handlePins(uint8_t pinArray[], int numberOfPins) {
 
   for (int i = 0; i<numberOfPins; i++) {
     switch (pinArray[i]) {
@@ -195,7 +194,7 @@ void handlePins(int pinArray[], int numberOfPins) {
 void handleDigitalPins() {
 
   handlePins(pinsConfig, DIGITAL_PIN_COUNT+ANALOG_PIN_COUNT);
-  
+
 }
 
 
@@ -205,7 +204,7 @@ void handleDigitalPins() {
   
 }*/
 
-void setupPins(int configArray[], int numberOfPins) {
+void setupPins(uint8_t configArray[], int numberOfPins) {
   for (int i = 0; i<numberOfPins; i++) {
     switch (configArray[i]) {
     case 0:    // not configured
@@ -304,14 +303,20 @@ void setupPins(int configArray[], int numberOfPins) {
       setupLCDpin(i);
       break;
 #endif
+
+#ifdef MCP23017x
+    case MCP_DI:    // 
+      setupMCPpin(i);
+      break;
+#endif
     }
   }
 }
 void setupAllPins() {
-  setupPins(pinsConfig, DIGITAL_PIN_COUNT+ANALOG_PIN_COUNT);
+  setupPins(pinsConfig, DIGITAL_PIN_COUNT+ANALOG_PIN_COUNT+MCP_PIN_COUNT);
 }
 void setupDigitalPins() {
-  setupPins(pinsConfig, DIGITAL_PIN_COUNT+ANALOG_PIN_COUNT);
+  setupPins(pinsConfig, DIGITAL_PIN_COUNT+ANALOG_PIN_COUNT+MCP_PIN_COUNT);
 }
 
 
@@ -343,9 +348,16 @@ void setValue(int pin, int val) {
       pinsData[pin] = val;
       break;
 #endif
+
 #ifdef LCD
     case AO_LCD:    // 
       pinsData[pin] = val;
+      break;
+#endif
+
+#ifdef MCP23017x
+    case MCP_DO:    // 
+      setMCPpin(pin, val);
       break;
 #endif
     }
