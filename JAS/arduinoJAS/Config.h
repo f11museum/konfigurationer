@@ -43,7 +43,7 @@
 byte mac[] = {
   0xA8, 0x61, 0x0A, 0xAC, 0x4B, 0xBB
 };
-IPAddress ip(192, 168, 0, 78);
+IPAddress ip(192, 168, 0, 140);
 #endif
 
 // Use TM1637 drivers for 7 segment displays
