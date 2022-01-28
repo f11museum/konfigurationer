@@ -37,7 +37,7 @@
 
 
 // Use ethernet shield
-//#define ETHERNET
+#define ETHERNET
 #define ETHERNET_RESET // Use this to reset the ethernet shield on boot, you must remove reset pins between arduino nad shield and connect the shield reset pin to pin 12 on arduino
 #ifdef ETHERNET
 #include <Ethernet.h>
@@ -66,7 +66,7 @@ IPAddress ip(192, 168, 0, 141);
 
 // MCP23017 
 #define MCP23017x
-#define MCP23017_MAX_BOARDS 2 // Set this to the max number of boards that you have connected. Uses memory for each board. Max 8
+#define MCP23017_MAX_BOARDS 4 // Set this to the max number of boards that you have connected. Uses memory for each board. Max 8
 #ifdef MCP23017x
 #define MCP_PIN_COUNT 16*MCP23017_MAX_BOARDS
 #else

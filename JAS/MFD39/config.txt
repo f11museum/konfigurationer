@@ -1,6 +1,6 @@
-/2;n;192.168.0.71 34556/ # Vänster MFD
-/3;n;192.168.0.71 34557/ # Höger MFD
-/4;n;192.168.0.71 34558/ # Mitten MFD
+/2;n;192.168.0.134 34556/ # Vänster MFD
+/3;n;192.168.0.136 34557/ # Höger MFD
+/4;n;192.168.0.135 34558/ # Mitten MFD
 
 
 # The indicated pitch on the panel for the first vacuum instrument

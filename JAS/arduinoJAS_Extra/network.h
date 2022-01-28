@@ -5,11 +5,12 @@
 #include <EthernetUdp.h>
 
 
-unsigned int localPort = 34555;      // local port to listen on // Remember to use a different port if using multiple masters
+unsigned int localPort = 34556;      // local port to listen on // Remember to use a different port if using multiple masters
 
 // buffers for receiving and sending data
-char packetBuffer[UDP_TX_PACKET_MAX_SIZE];  // buffer to hold incoming packet,
-char ReplyBuffer[UDP_TX_PACKET_MAX_SIZE];        // a string to send back
+#define UDP_PACKET_SIZE 512
+char packetBuffer[UDP_PACKET_SIZE];  // buffer to hold incoming packet,
+//char ReplyBuffer[UDP_TX_PACKET_MAX_SIZE];        // a string to send back
 
 // An EthernetUDP instance to let us send and receive packets over UDP
 EthernetUDP Udp;
@@ -79,7 +80,7 @@ void loopEthernet() {
 //    Serial.println(Udp.remotePort());
 
     // read the packet into packetBufffer
-    Udp.read(packetBuffer, UDP_TX_PACKET_MAX_SIZE);
+    Udp.read(packetBuffer, UDP_PACKET_SIZE);
 //    Serial.println("Contents:");
     
     if (packetBuffer[0] == '*') {
@@ -147,20 +148,21 @@ void loopEthernet() {
           
         } else if (what == 0) {
           // set value
-          
-          current = getNextSubStr(packetBuffer, substr, current, '=');
-          int pinNr = atoi(substr+1);
-          if (substr[0] == 'A') {
-            pinNr = pinNr+DIGITAL_PIN_COUNT;
+          while(current<strlen(packetBuffer)) {
+            current = getNextSubStr(packetBuffer, substr, current, '=');
+            int pinNr = atoi(substr+1);
+            if (substr[0] == 'A') {
+              pinNr = pinNr+DIGITAL_PIN_COUNT;
+            }
+            if (substr[0] == 'M') {
+              pinNr = pinNr+DIGITAL_PIN_COUNT+ANALOG_PIN_COUNT;
+            }
+            current = getNextSubStr(packetBuffer, substr, current, ';');
+            int value = atoi(substr);
+            setValue(pinNr, value);
+    //        Serial.print("set value:");
+    //        Serial.println(substr);
           }
-          if (substr[0] == 'M') {
-            pinNr = pinNr+DIGITAL_PIN_COUNT+ANALOG_PIN_COUNT;
-          }
-          current = getNextSubStr(packetBuffer, substr, current, ';');
-          int value = atoi(substr);
-          setValue(pinNr, value);
-  //        Serial.print("set value:");
-  //        Serial.println(substr);
           
         }
       }
@@ -183,7 +185,7 @@ void sendDataEth() {
   cts = false;
   bool changes = false;
   
-  for (int i = 0; i<DIGITAL_PIN_COUNT+ANALOG_PIN_COUNT; i++) {
+  for (int i = 0; i<DIGITAL_PIN_COUNT+ANALOG_PIN_COUNT+MCP_PIN_COUNT; i++) {
     if (pin_changed[i]) {
       changes = true;
       break;
@@ -193,7 +195,7 @@ void sendDataEth() {
     //Serial.print("sendDataEth: return");
     return;
   }
-  char strbuf[32];
+  char strbuf[64];
 
 //  remote = Udp.remoteIP();
 //    for (int i=0; i < 4; i++) {
@@ -250,7 +252,7 @@ void sendDataEth() {
     if (pin_changed[i]) {
       pin_changed[i]--;
       Udp.write("M");
-      itoa(i-DIGITAL_PIN_COUNT,strbuf,10);
+      itoa(i-DIGITAL_PIN_COUNT-ANALOG_PIN_COUNT,strbuf,10);
       Udp.write(strbuf);
       Udp.write(" ");
       itoa(pinsData[i],strbuf,10);
