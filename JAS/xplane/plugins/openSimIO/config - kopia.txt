@@ -1,0 +1,217 @@
+# Hash tag is considered a comment, can only be in beginning of sentence
+# You must fill in all fields even if analog scales is not used by digital inputs etc...
+
+# masterId.slaveId.Pin;pinExtra;iomode;reverse;center;pinMin;pinMax;xplaneDataRef;xplaneMin;xplaneMax;xplaneExtra;
+
+# example string:
+# 1.0.D43;0;DI_INPUT_PULLUP;0;0;0;1;sim/cockpit/switches/pitot_heat_on;0;1;0;
+# 1.0.A0;0;AI_RAW;0;500;100;900;sim/joystick/yoke_pitch_ratio;-1.0;1.0;0;
+
+# Windows COM Port
+#/1;s;\\.\COM1;
+# Linux port:
+#/1;s;/dev/ttyUSB0;
+
+/1;n;192.168.0.140 34555/ # this tells it to use ethernet
+/2;n;192.168.0.141 34556/ # this tells it to use ethernet
+
+
+# Set D13 to an output displaying the status of the pitot switch.
+1.0.D13;0;DO_BOOL;0;0;0;1;sim/cockpit/switches/pitot_heat_on;0;0;1;0;
+
+# Hash tag is considered a comment, can only be in beginning of sentence
+# You must fill in all fields even if analog scales is not used by digital inputs etc...
+# masterId.slaveId.Pin;iomode;reverse;center;pinMin;pinMax;xplaneDataRef;xplaneMin;xplaneMax;extraInfo;
+# example string:
+# 1.0.D5;1;0;0;0;1;sim/cockpit/switches/pitot_heat_on;0;1;0;
+# 1.0.A0;4;0;500;100;900;sim/joystick/yoke_pitch_ratio;-1.0;1.0;0;
+
+
+# 2prop
+
+# A10 är magnetsensorn
+
+## kabel1
+#sidroder
+1.0.A3;0;AI_RAW;0;490;0;970;sim/joystick/yoke_heading_ratio;0;-1.0;1.0;0;
+
+#noshjul
+*sim/operation/override/override_wheel_steer;1;
+1.0.A3;0;AI_RAW;0;490;0;970;sim/flightmodel2/gear/tire_steer_command_deg[0];0;-45.0;45.0;3;
+
+#skevroder
+1.0.A2;0;AI_RAW;1;512;373;632;sim/joystick/yoke_roll_ratio;0;-1.0;1.0;2;
+
+#höjdroder
+1.0.A1;0;AI_RAW;1;504;348;621;sim/joystick/yoke_pitch_ratio;0;-1.0;1.0;0;
+
+#gas höger 
+1.0.A4;0;AI_RAW;0;592;89;830;sim/cockpit2/engine/actuators/throttle_ratio_all;0.9;0.0;1.0;0;
+
+#gas vänster
+#1.0.A5;0;AI_RAW;0;450;0;890;sim/cockpit2/engine/actuators/throttle_ratio[0];0.5;0.0;1.0;0;
+
+# alternativ till gas sim/cockpit2/engine/actuators/throttle_ratio[]
+# variabel för all gas: sim/cockpit2/engine/actuators/throttle_ratio_all
+
+#höjdrodstrim
+1.0.D30;0;DI_INPUT_STEP;0;0.1;0;0;sim/flightmodel/controls/elv_trim;0;-1.0;1.0;0;
+1.0.D31;0;DI_INPUT_STEP;1;0.1;0;0;sim/flightmodel/controls/elv_trim;0;-1.0;1.0;0;
+#Skevtrim
+1.0.D24;0;DI_INPUT_STEP;0;0.1;0;0;sim/flightmodel/controls/ail_trim;0;-1.0;1.0;0;
+1.0.D25;0;DI_INPUT_STEP;1;0.1;0;0;sim/flightmodel/controls/ail_trim;0;-1.0;1.0;0;
+
+
+# mix
+#1.0.A6;0;AI_FILTER;0;500;3;890;sim/cockpit2/engine/actuators/mixture_ratio[1];0;0.0;1.0;0;
+#1.0.A7;0;AI_FILTER;0;500;3;890;sim/cockpit2/engine/actuators/mixture_ratio[0];0;0.0;1.0;0;
+
+#prop pitch
+#1.0.A8;0;AI_FILTER;0;500;3;890;sim/cockpit2/engine/actuators/prop_rotation_speed_rad_sec[1];0;0.0;300.0;0;
+#1.0.A9;0;AI_FILTER;0;500;3;890;sim/cockpit2/engine/actuators/prop_rotation_speed_rad_sec[0];0;0.0;300.0;0;
+
+#klaff 
+#1.0.D28;0;DI_INPUT_PULLUP;0;0;0;1;sim/flight_controls/flaps_up;0;0;1;1; # flaps up a notch
+#1.0.D29;0;DI_INPUT_PULLUP;0;0;0;1;sim/flight_controls/flaps_down;0;0;1;1; # flaps down a notch
+#klaff specialfunktion för 2 pinnar
+#1.0.D39;38;DI_3WAY_2;0;22.5;0;45;sim/flightmodel/controls/flaprqst;0.5;0.0;1.0;0;
+
+## kabel2
+
+## Luftbroms
+#ut
+1.0.D34;0;DI_INPUT_STEP;0;2.5;0;0;sim/cockpit2/controls/speedbrake_ratio;0;0;1;0;
+#in
+1.0.D35;0;DI_INPUT_STEP;1;2.5;0;0;sim/cockpit2/controls/speedbrake_ratio;0;0;1;0;
+
+
+#avtryckare
+1.0.D43;0;DI_INPUT_PULLUP;0;0;0;0;sim/weapons/fire_any_shell;0;0;1;0;
+1.0.D41;0;DI_INPUT_PULLUP;0;0;0;0;sim/weapons/fire_guns;0;0;1;0;
+#1.0.D28;0;DI_INPUT_PULLUP;0;0;0;0;sim/cockpit/switches/pitot_heat_on;0;0;1;0;
+#sim/cockpit/switches/pitot_heat_on
+#broms höger
+#1.0.D42;0;DI_INPUT_PULLUP;0;0.5;0;1;sim/cockpit2/controls/right_brake_ratio;0;0;1;0;
+#broms vänster
+#1.0.D47;0;DI_INPUT_PULLUP;0;0.5;0;1;sim/cockpit2/controls/left_brake_ratio;0;0;1;0;
+#1.0.D47;0;DI_INPUT_PULLUP;0;0.5;0;1;sim/cockpit2/controls/right_brake_ratio;0;0;1;0;
+
+#broms höger Analog
+#1.0.A15;0;AI_FILTER;0;400;50;800;sim/cockpit2/controls/right_brake_ratio;0;0;1;0;
+#broms vänster Analog
+#1.0.A14;0;AI_FILTER;0;400;50;800;sim/cockpit2/controls/left_brake_ratio;0;0;1;0;
+
+#Parkeringsbroms
+1.0.D44;0;DI_INPUT_PULLUP;1;0.5;0;1;sim/cockpit2/controls/parking_brake_ratio;0;0;1;0;
+
+
+# nav ljus
+#1.0.D46;0;DI_INPUT_PULLUP;0;0;0;0;sim/cockpit/electrical/nav_lights_on;0;0;1;0;
+
+# strob ljus
+#1.0.D49;0;DI_INPUT_PULLUP;0;0;0;0;sim/cockpit/electrical/strobe_lights_on;0;0;1;0;
+
+# taxi ljus
+#1.0.D48;0;DI_INPUT_PULLUP;0;0;0;0;sim/cockpit/electrical/taxi_light_on;0;0;1;0;
+
+# landnings ljus
+#1.0.D45;0;DI_INPUT_PULLUP;0;0;0;0;sim/cockpit/electrical/landing_lights_on;0;0;1;0;
+1.0.D43;0;DI_INPUT_PULLUP;0;0;0;0;sim/cockpit/electrical/landing_lights_on;0;0;1;0;
+
+# landningsställ
+#1.0.D27;0;DI_INPUT_PULLUP;0;0.0;0;1;sim/flight_controls/landing_gear_up;0;0;1;1;
+#1.0.D26;0;DI_INPUT_PULLUP;0;0.0;0;1;sim/flight_controls/landing_gear_down;0;0;1;1;
+1.0.D26;0;DI_INPUT_PULLUP;0;0.0;0;1;sim/cockpit2/controls/gear_handle_down;0;0;1;0;
+
+#1.0.D41;0;DI_INPUT_PULLUP;0;0.0;0;1;sim/flight_controls/landing_gear_up;0;0;1;1;
+#1.0.D43;0;DI_INPUT_PULLUP;0;0.0;0;1;sim/flight_controls/landing_gear_down;0;0;1;1;
+
+
+# EXTRA
+
+2.0.D37;38;DO_TM1637_DEC;0;0;0;500;JAS/fuel;0;0;500;0; # CLK on pin and DIO on pinExtra
+
+# JAS frontpanel
+## Knappar
+2.0.D32;0;DI_INPUT_PULLUP;0;0;0;1;JAS/io/frontpanel/di/spak;0;0;1;0;
+2.0.D31;0;DI_INPUT_PULLUP;0;0;0;1;JAS/io/frontpanel/di/att;0;0;1;0;
+2.0.D30;0;DI_INPUT_PULLUP;0;0;0;1;JAS/io/frontpanel/di/hojd;0;0;1;0;
+2.0.D33;0;DI_INPUT_PULLUP;0;0;0;1;JAS/io/frontpanel/di/master;0;0;1;0;
+2.0.D34;0;DI_INPUT_PULLUP;0;0;0;1;JAS/io/frontpanel/di/fall;0;0;1;0;
+2.0.D35;0;DI_INPUT_PULLUP;0;0;0;1;JAS/io/frontpanel/di/afk;0;0;1;0;
+##Lampor
+2.0.D22;0;DO_BOOL;1;0;0;1;JAS/io/frontpanel/lo/master1;0;0;1;0;
+2.0.D23;0;DO_BOOL;1;0;0;1;JAS/io/frontpanel/lo/master2;0;0;1;0;
+2.0.D24;0;DO_BOOL;1;0;0;1;JAS/io/frontpanel/lo/airbrake;0;0;1;0;
+2.0.D25;0;DO_BOOL;1;0;0;1;JAS/io/frontpanel/lo/spak;0;0;1;0;
+2.0.D26;0;DO_BOOL;1;0;0;1;JAS/io/frontpanel/lo/att;0;0;1;0;
+2.0.D28;0;DO_BOOL;1;0;0;1;JAS/io/frontpanel/lo/hojd;0;0;1;0;
+2.0.D27;0;DO_BOOL;1;0;0;1;JAS/io/frontpanel/lo/a14;0;0;1;0;
+2.0.D29;0;DO_BOOL;1;0;0;1;JAS/io/frontpanel/lo/afk;0;0;1;0;
+
+
+# JAS VU22 panel
+2.0.M0;0;MCP_DI;1;0;0;0;JAS/lampprov/p1;0;0;1;0;
+2.0.M1;0;MCP_DI;1;0;0;0;JAS/io/vu22/di/syst;0;0;1;0;
+2.0.M2;0;MCP_DI;0;0;0;0;JAS/io/vu22/di/ess;0;0;1;0;
+2.0.M3;0;MCP_DI;1;0;0;0;JAS/io/vu22/di/hstrom;0;0;1;0;
+2.0.M4;0;MCP_DI;1;0;0;0;JAS/io/vu22/di/apu;0;0;1;0;
+2.0.M5;0;MCP_DI;0;0;0;1;JAS/io/vu22/di/apubrand;0.5;0;1;0;
+2.0.M6;0;MCP_DI;0;0;0;1;JAS/io/vu22/di/ltbra;0.5;0;1;0;
+2.0.M7;0;MCP_DI;1;0;0;1;JAS/io/vu22/di/vapenred;0.5;0;1;0;
+2.0.M8;0;MCP_DI;1;0;0;1;JAS/io/vu22/di/vapenop;0.5;0;1;0;
+
+2.0.M9;0;MCP_DI;1;0;0;1;JAS/io/vu22/di/vapensim;0.5;0;1;0;
+2.0.M10;0;MCP_DI;1;0;0;1;JAS/io/vu22/di/vapenfikt;0.5;0;1;0;
+2.0.M11;0;MCP_DI;1;0;0;1;JAS/io/vu22/di/fallvapen;0.5;0;1;0;
+2.0.M12;0;MCP_DI;1;0;0;1;JAS/io/vu22/di/falltank;0.5;0;1;0;
+2.0.M13;0;MCP_DI;1;0;0;1;JAS/io/vu22/di/elnik;0.5;0;1;0;
+2.0.M14;0;MCP_DI;1;0;0;1;JAS/io/vu22/di/krig;0.5;0;1;0;
+2.0.M15;0;MCP_DI;1;0;0;1;JAS/io/vu22/di/mkv;0.5;0;1;0;
+
+2.0.M16;0;MCP_DI;1;0;0;1;JAS/io/vu22/di/sand;0.5;0;1;0;
+2.0.M17;0;MCP_DI;1;0;0;1;JAS/io/vu22/di/rhm;0.5;0;1;0;
+2.0.M18;0;MCP_DI;1;0;0;1;JAS/io/vu22/di/termbatt;0.5;0;1;0;
+
+#M24 är första i portB
+2.0.M24;0;MCP_DO;0;0;0;1;JAS/io/vu22/lo/apubrand;0.5;0;1;0;
+2.0.M25;0;MCP_DO;0;0;0;1;JAS/io/vu22/lo/apugar;0.5;0;1;0;
+2.0.M26;0;MCP_DO;0;0;0;1;JAS/io/vu22/lo/apured;0.5;0;1;0;
+2.0.M27;0;MCP_DO;0;0;0;1;JAS/io/vu22/lo/termbatt;0.5;0;1;0;
+2.0.M28;0;MCP_DO;0;0;0;1;JAS/io/vu22/lo/sand;0.5;0;1;0;
+2.0.M29;0;MCP_DO;0;0;0;1;JAS/io/vu22/lo/rhm;0.5;0;1;0;
+2.0.M30;0;MCP_DO;0;0;0;1;JAS/io/vu22/lo/mkv;0.5;0;1;0;
+
+
+# VAT Larmtablå M32 är första porten
+2.0.M32;0;MCP_DO;0;0;0;1;JAS/io/vat/lo/normsty;0.5;0;1;0;
+2.0.M33;0;MCP_DO;0;0;0;1;JAS/io/vat/lo/luftsys;0.5;0;1;0;
+2.0.M34;0;MCP_DO;0;0;0;1;JAS/io/vat/lo/hhp1;0.5;0;1;0;
+2.0.M35;0;MCP_DO;0;0;0;1;JAS/io/vat/lo/hgen;0.5;0;1;0;
+2.0.M36;0;MCP_DO;0;0;0;1;JAS/io/vat/lo/motor;0.5;0;1;0;
+2.0.M37;0;MCP_DO;0;0;0;1;JAS/io/vat/lo/dragkr;0.5;0;1;0;
+2.0.M38;0;MCP_DO;0;0;0;1;JAS/io/vat/lo/oljetr;0.5;0;1;0;
+
+2.0.M39;0;MCP_DO;0;0;0;1;JAS/io/vat/lo/abumod;0.5;0;1;0;
+2.0.M40;0;MCP_DO;0;0;0;1;JAS/io/vat/lo/primdat;0.5;0;1;0;
+2.0.M41;0;MCP_DO;0;0;0;1;JAS/io/vat/lo/hydr1;0.5;0;1;0;
+2.0.M42;0;MCP_DO;0;0;0;1;JAS/io/vat/lo/resgen;0.5;0;1;0;
+2.0.M43;0;MCP_DO;0;0;0;1;JAS/io/vat/lo/mobrand;0.5;0;1;0;
+2.0.M44;0;MCP_DO;0;0;0;1;JAS/io/vat/lo/apu;0.5;0;1;0;
+2.0.M45;0;MCP_DO;0;0;0;1;JAS/io/vat/lo/apubrnd;0.5;0;1;0;
+
+2.0.M46;0;MCP_DO;0;0;0;1;JAS/io/vat/lo/styrsak;0.5;0;1;0;
+2.0.M47;0;MCP_DO;0;0;0;1;JAS/io/vat/lo/uppdrag;0.5;0;1;0;
+2.0.M48;0;MCP_DO;0;0;0;1;JAS/io/vat/lo/hydr2;0.5;0;1;0;
+2.0.M49;0;MCP_DO;0;0;0;1;JAS/io/vat/lo/likstrm;0.5;0;1;0;
+2.0.M50;0;MCP_DO;0;0;0;1;JAS/io/vat/lo/landst;0.5;0;1;0;
+2.0.M51;0;MCP_DO;0;0;0;1;JAS/io/vat/lo/bromsar;0.5;0;1;0;
+2.0.M52;0;MCP_DO;0;0;0;1;JAS/io/vat/lo/streck1;0.5;0;1;0;
+
+2.0.M53;0;MCP_DO;0;0;0;1;JAS/io/vat/lo/felinfo;0.5;0;1;0;
+2.0.M54;0;MCP_DO;0;0;0;1;JAS/io/vat/lo/dator;0.5;0;1;0;
+2.0.M55;0;MCP_DO;0;0;0;1;JAS/io/vat/lo/streck2;0.5;0;1;0;
+2.0.M56;0;MCP_DO;0;0;0;1;JAS/io/vat/lo/brasys;0.5;0;1;0;
+2.0.M57;0;MCP_DO;0;0;0;1;JAS/io/vat/lo/bramgd;0.5;0;1;0;
+2.0.M58;0;MCP_DO;0;0;0;1;JAS/io/vat/lo/oxykab;0.5;0;1;0;
+2.0.M59;0;MCP_DO;0;0;0;1;JAS/io/vat/lo/huvstol;0.5;0;1;0;

@@ -1,0 +1,419 @@
+# This file uses same input format as the dataref.txt
+# Use tab character and not space to seperate after each type
+# name TAB type TAB writable TAB unit TAB description
+
+# Variabler
+JAS/huvudmod			int		sys	unit	unit2	Description
+JAS/fuel/total				float	sys	unit	unit2	Beräknad total bränsle
+JAS/fuel/eta				float	sys	unit	unit2	Beräknad total bränsle
+JAS/fuel/range				float	sys	unit	unit2	Beräknad total bränsle
+JAS/fuel/pct				float	sys	unit	unit2	Beräknad total bränsle
+JAS/fuel/home				float	sys	unit	unit2	hur många % behövs för att komma hem
+
+JAS/a14		int		sys	unit	unit2	Description
+
+
+## MKV
+JAS/system/mkv/larm			int		sys	unit	unit2	Description
+JAS/system/mkv/eta			float	sys	unit	unit2	Tidkvar till markkontakt
+JAS/system/mkv/gneed		float	sys	unit	unit2	Lastfaktor som behövs för att klara sig ur
+JAS/system/mkv/needmore		int		sys	unit	unit2	Lastfaktorn måste ökas
+JAS/system/mkv/lastfaktor	float	sys	unit	unit2	Beräknad lastfaktor
+JAS/system/mkv/help			int		sys	unit	unit2	Description
+
+# Variabler från Fly-by-wire beräkningar
+JAS/fbw/max_roll_rate	float	sys	unit	unit2	Nuvarande max rollrate baserat på hastighet
+JAS/fbw/override	int	sys	unit	unit2	Description
+JAS/fbw/override_roll	float	sys	unit	unit2	värde som läggs på beräkningen
+JAS/fbw/override_pitch	float	sys	unit	unit2	värde som läggs på beräkningen
+JAS/fbw/override_yaw	float	sys	unit	unit2	värde som läggs på beräkningen
+
+#Heartbeats
+JAS/system/mkv/heartbeat	int	sys	unit	unit2	Description
+JAS/system/sys/heartbeat	int	sys	unit	unit2	Description
+JAS/system/org/heartbeat	int	sys	unit	unit2	Description
+JAS/system/larm/heartbeat	int	sys	unit	unit2	Description
+JAS/system/hud/heartbeat	int	sys	unit	unit2	Description
+JAS/heartbeat/autopilot		int	sys	unit	unit2	Description
+JAS/heartbeat/pratorn		int	sys	unit	unit2	Description
+JAS/heartbeat/pratornlua	int	sys	unit	unit2	Description
+JAS/heartbeat/vat			int	sys	unit	unit2	heartbeat
+JAS/heartbeat/el            int sys	unit	unit2	Description
+JAS/heartbeat/vapen            int sys	unit	unit2	Description
+JAS/heartbeat/mfdlua            int sys	unit	unit2	Description
+
+JAS/debug/p		float	sys	unit	unit2	Description
+JAS/debug/i		float	sys	unit	unit2	Description
+JAS/debug/d		float	sys	unit	unit2	Description
+JAS/debug/d1	float	sys	unit	unit2	Description
+JAS/debug/d2	float	sys	unit	unit2	Description
+JAS/debug/d3	float	sys	unit	unit2	Description
+JAS/debug/d4	float	sys	unit	unit2	Description
+JAS/debug/d5	float	sys	unit	unit2	Description
+JAS/debug/wanted_rate			float	sys	unit	unit2	Description
+JAS/debug/auto_trim				float	sys	unit	unit2	Description
+JAS/debug/delta					float	sys	unit	unit2	Description
+JAS/debug/trim					float	sys	unit	unit2	Description
+JAS/debug/error_correction		float	sys	unit	unit2	Description
+JAS/debug/error_correction_g	float	sys	unit	unit2	Description
+
+# Bengts JAS
+
+JAS/vu22/override/knappar		int		sys	unit	unit2	Description
+JAS/frontpanel/override/knappar	int		sys	unit	unit2	Description
+JAS/st/override/knappar	int		sys	unit	unit2	Description
+
+JAS/knapparfunkar	int		sys	unit	unit2	Description
+
+JAS/lampprov/p1		int		sys	unit	unit2	Description
+JAS/system/apu/power	int		sys	unit	unit2		Alltid på för att ge lampan ström
+
+JAS/io/pedaler/left				float	sys	unit	unit2	desc
+JAS/io/pedaler/right			float	sys	unit	unit2	desc
+
+
+JAS/autopilot/alt		float	sys	unit	unit2	Description
+JAS/autopilot/att		float	sys	unit	unit2	Description
+JAS/autopilot/mode		int		sys	unit	unit2	Description
+JAS/autopilot/afk		float	sys	unit	unit2	Description
+JAS/autopilot/afk_mode	int		sys	unit	unit2	Description
+JAS/autopilot/ks_mode	int		sys	unit	unit2	Description
+JAS/autopilot/ks_roll	float	sys	unit	unit2	Description
+
+
+# Pratorn
+JAS/pratorn/tal/spak			int		sys	unit	unit2	Description
+JAS/pratorn/tal/taupp			int		sys	unit	unit2	Description
+JAS/pratorn/tal/okapadrag		int		sys	unit	unit2	Description
+JAS/pratorn/tal/alfa12			int		sys	unit	unit2	Description
+JAS/pratorn/tal/fix				int		sys	unit	unit2	Description
+JAS/pratorn/tal/minskafart		int		sys	unit	unit2	Description
+JAS/pratorn/tal/ejtils			int		sys	unit	unit2	Description
+JAS/pratorn/tal/hojd			int		sys	unit	unit2	Description
+JAS/pratorn/tal/marktryckfel	int		sys	unit	unit2	Description
+JAS/pratorn/tal/transsonik		int		sys	unit	unit2	Description
+JAS/pratorn/tal/systemtest		int		sys	unit	unit2	Description
+
+JAS/pratorn/larm/mkv			int		sys	unit	unit2	Description
+JAS/pratorn/larm/transsonik		int		sys	unit	unit2	Description
+JAS/pratorn/larm/gransvarde		int		sys	unit	unit2	Description
+JAS/pratorn/larm/gransvarde_g		int		sys	unit	unit2	Description
+JAS/pratorn/larm/master			int		sys	unit	unit2	Description
+
+# Övriga larm
+JAS/system/larm/transsonik		int		sys	unit	unit2	Description
+JAS/system/larm/minskafart		int		sys	unit	unit2	Description
+JAS/system/larm/okapadrag		int		sys	unit	unit2	Description
+
+JAS/system/larm/master		int		sys	unit	unit2	Description
+
+
+JAS/system/logic/heartbeat	int	sys	unit	unit2	Description
+
+JAS/system/dap/power		int	sys	unit	unit2	Description
+JAS/system/dap/startup		int	sys	unit	unit2	Description
+JAS/system/dap/lamp/pluv	int	sys	unit	unit2	Description
+
+JAS/st/gs	int	sys	unit	unit2	Description
+
+JAS/system/mot/fack		int	sys	unit	unit2	Description
+JAS/system/mot/rems		int	sys	unit	unit2	Description
+
+JAS/system/ess/heartbeat	int	sys	unit	unit2	Description
+JAS/system/ess/heartbeat2	int	sys	unit	unit2	Description
+JAS/system/ess/power		int	sys	unit	unit2	Description
+JAS/system/ess/startup		int	sys	unit	unit2	Description
+
+JAS/vat/power		int		sys	unit	unit2		Om systemet har ström
+
+JAS/vat/larm/larm1		int		sys	unit	unit2		Larm som inte behöver kvitteras
+JAS/vat/larm/larm2		int		sys	unit	unit2		Larm som behöver kviteras
+
+JAS/vat/larm/larmmkv	int		sys	unit	unit2		Larm för mkv
+
+JAS/vat/larm/normsty	int	sys	unit	unit2	Description
+JAS/vat/larm/luftsys	int	sys	unit	unit2	Description
+JAS/vat/larm/hhp1		int	sys	unit	unit2	Description
+JAS/vat/larm/hgen		int	sys	unit	unit2	Description
+JAS/vat/larm/motor	int	sys	unit	unit2	Description
+JAS/vat/larm/dragkr	int	sys	unit	unit2	Description
+JAS/vat/larm/oljetr	int	sys	unit	unit2	Description
+
+JAS/vat/larm/abumod	int	sys	unit	unit2	Description
+JAS/vat/larm/primdat	int	sys	unit	unit2	Description
+JAS/vat/larm/hydr1	int	sys	unit	unit2	Description
+JAS/vat/larm/resgen	int	sys	unit	unit2	Description
+JAS/vat/larm/mobrand	int	sys	unit	unit2	Description
+JAS/vat/larm/apu		int	sys	unit	unit2	Description
+JAS/vat/larm/apubrnd	int	sys	unit	unit2	Description
+
+JAS/vat/larm/styrsak	int	sys	unit	unit2	Description
+JAS/vat/larm/uppdrag	int	sys	unit	unit2	Description
+JAS/vat/larm/hydr2	int	sys	unit	unit2	Description
+JAS/vat/larm/likstrm	int	sys	unit	unit2	Description
+JAS/vat/larm/landst	int	sys	unit	unit2	Description
+JAS/vat/larm/bromsar	int	sys	unit	unit2	Description
+
+JAS/vat/larm/felinfo	int	sys	unit	unit2	Description
+JAS/vat/larm/dator	int	sys	unit	unit2	Description
+JAS/vat/larm/brasys	int	sys	unit	unit2	Description
+JAS/vat/larm/bramgd	int	sys	unit	unit2	Description
+JAS/vat/larm/oxykab	int	sys	unit	unit2	Description
+JAS/vat/larm/huvstol	int	sys	unit	unit2	Description
+
+JAS/vat/larmkod		int[400]	vat	unit	unit2	Description
+
+#Elektronik system
+JAS/el/stromskena/huvud_vac_a	int	sys	unit	unit2	AFK AMOT TNS fenpitotrör alfagivare-vänster RT36 FR38 FRM39 IK f/s EP17-TI-FI-SI förbandbelys taxistrålk identbelys
+JAS/el/stromskena/sekundar_vac_a	int	sys	unit	unit2	AVAP+balkar nospitotrör alfagivare-höger betagivare MIP CEM TS EP17-pp2-MI lant antikol strålk
+JAS/el/stromskena/sekundar_vac_b	int	sys	unit	unit2	radar
+JAS/el/stromskena/huvud_a	int	sys	unit	unit2	AFPL huvudblock
+JAS/el/stromskena/huvud_a1	int	sys	unit	unit2	AMOT hydraul el TNS DAP LD7 utlopp-rpm-ind horizontgyro broms ident indiker belys 
+JAS/el/stromskena/huvud_a2	int	sys	unit	unit2	NÖDF RGENsys
+JAS/el/stromskena/huvud_c	int	sys	unit	unit2	AMOT RHM TILS SSR vingspetsljus CEM SD EP17 minnes hålln
+JAS/el/stromskena/huvud_e	int	sys	unit	unit2	ESS
+JAS/el/stromskena/sekundar_a	int	sys	unit	unit2	AVAP + balkar lampkontr radar-EFF-HFE
+JAS/el/stromskena/batteri_c	int	sys	unit	unit2	AFPL krikiska block samt broms
+
+#apubrand	lampa	vu22	JAS/lampprov/p1	JAS/system/ess/power	DescriptionM24
+hydr1	lampa	vat	JAS/lampprov/p1	JAS/vat/power	Description
+
+#VU22
+apubrand	lampa	vu22	JAS/lampprov/p1	JAS/vat/power	M24 0:PB0
+apugar		lampa	vu22	JAS/lampprov/p1	JAS/system/apu/power	M25 0:PB1
+apured		lampa	vu22	JAS/lampprov/p1	JAS/system/apu/power	M26 0:PB2
+termbatt	lampa	vu22	JAS/lampprov/p1	JAS/vat/power	M27 0:PB3
+sand		lampa	vu22	JAS/lampprov/p1	JAS/vat/power	M28 0:PB4
+rhm			lampa	vu22	JAS/lampprov/p1	JAS/vat/power	M29 0:PB5
+mkv			lampa	vu22	JAS/lampprov/p1	JAS/vat/power	M30 0:PB6
+belysning	lampa	vu22	JAS/lampprov/p1	JAS/vat/power	M31 0:PB7
+
+JAS/io/vu22/lamp/belysning
+JAS/io/vu22/lo/belysning
+
+#Knappar i VU22
+lampprov	knapp	vu22	JAS/vu22/override/knappar	JAS/vat/power	M0 0:PA0
+syst		knapp	vu22	JAS/vu22/override/knappar	JAS/vat/power	M1 0:PA1
+ess			knapp	vu22	JAS/vu22/override/knappar	JAS/vat/power	M2 0:PA2
+hstrom		knapp	vu22	JAS/vu22/override/knappar	JAS/vat/power	M3 0:PA3
+apu			knapp	vu22	JAS/vu22/override/knappar	JAS/vat/power	M4 0:PA4
+apubrand	knapp	vu22	JAS/vu22/override/knappar	JAS/vat/power	M5 0:PA5
+ltbra		knapp	vu22	JAS/vu22/override/knappar	JAS/vat/power	M6 0:PA6
+vapenred	knapp	vu22	JAS/vu22/override/knappar	JAS/vat/power	M7 0:PA7
+vapenop		knapp	vu22	JAS/vu22/override/knappar	JAS/vat/power	M8 0:PB0
+vapensim	knapp	vu22	JAS/vu22/override/knappar	JAS/vat/power	M9 0:PB1
+vapenfikt	knapp	vu22	JAS/vu22/override/knappar	JAS/vat/power	M10 0:PB2
+fallvapen	knapp	vu22	JAS/vu22/override/knappar	JAS/vat/power	M11 0:PB3
+falltank	knapp	vu22	JAS/vu22/override/knappar	JAS/vat/power	M12 0:PB4
+elnik		knapp	vu22	JAS/vu22/override/knappar	JAS/vat/power	M13 0:PB5
+krig		knapp	vu22	JAS/vu22/override/knappar	JAS/vat/power	M14 0:PB6
+mkv			knapp	vu22	JAS/vu22/override/knappar	JAS/vat/power	M15 0:PB7
+sand		knapp	vu22	JAS/vu22/override/knappar	JAS/vat/power	M16 1:PA0
+rhm			knapp	vu22	JAS/vu22/override/knappar	JAS/vat/power	M17 1:PA1
+termbatt	knapp	vu22	JAS/vu22/override/knappar	JAS/vat/power	M18 1:PA2
+
+# Frontpanel
+## Lampor
+master1		lampa	frontpanel	JAS/lampprov/p1	JAS/vat/power	D22
+master2		lampa	frontpanel	JAS/lampprov/p1	JAS/vat/power	D23
+airbrake	lampa	frontpanel	JAS/lampprov/p1	JAS/vat/power	D24
+spak		lampa	frontpanel	JAS/lampprov/p1	JAS/vat/power	D25
+att			lampa	frontpanel	JAS/lampprov/p1	JAS/vat/power	D26
+hojd		lampa	frontpanel	JAS/lampprov/p1	JAS/vat/power	D27
+a14			lampa	frontpanel	JAS/lampprov/p1	JAS/vat/power	D28
+afk			lampa	frontpanel	JAS/lampprov/p1	JAS/vat/power	D29
+ks			lampa	frontpanel	JAS/lampprov/p1	JAS/vat/power	D? ej klar
+gears		lampa	frontpanel	JAS/lampprov/p1	JAS/vat/power	D? ej klar
+hojdvarn	lampa	frontpanel	JAS/lampprov/p1	JAS/vat/power	M60 3:PB4
+
+## Knappar
+spak		knapp	frontpanel	JAS/frontpanel/override/knappar	JAS/vat/power	D30
+att			knapp	frontpanel	JAS/frontpanel/override/knappar	JAS/vat/power	D31
+hojd		knapp	frontpanel	JAS/frontpanel/override/knappar	JAS/vat/power	D32
+master		knapp	frontpanel	JAS/frontpanel/override/knappar	JAS/vat/power	D33
+fall		knapp	frontpanel	JAS/frontpanel/override/knappar	JAS/vat/power	D34
+afk			knapp	frontpanel	JAS/frontpanel/override/knappar	JAS/vat/power	D35
+
+start		knapp	frontpanel	JAS/frontpanel/override/knappar	JAS/vat/power	ej klar
+
+# ST Systemtablån
+## Lampor inuti knapp
+J		lampa	st	JAS/lampprov/p1	JAS/vat/power	D22
+A		lampa	st	JAS/lampprov/p1	JAS/vat/power	D22
+S		lampa	st	JAS/lampprov/p1	JAS/vat/power	D22
+STR     lampa	st	JAS/lampprov/p1	JAS/vat/power	D22
+DL		lampa	st	JAS/lampprov/p1	JAS/vat/power	D22
+RR		lampa	st	JAS/lampprov/p1	JAS/vat/power	D22
+M		lampa	st	JAS/lampprov/p1	JAS/vat/power	D22
+B		lampa	st	JAS/lampprov/p1	JAS/vat/power	D22
+L		lampa	st	JAS/lampprov/p1	JAS/vat/power	D22
+GS		lampa	st	JAS/lampprov/p1	JAS/vat/power	D22
+IP		lampa	st	JAS/lampprov/p1	JAS/vat/power	D22
+D		lampa	st	JAS/lampprov/p1	JAS/vat/power	D22
+HVP     lampa	st	JAS/lampprov/p1	JAS/vat/power	D22
+IRB     lampa	st	JAS/lampprov/p1	JAS/vat/power	D22
+AK		lampa	st	JAS/lampprov/p1	JAS/vat/power	D22
+
+## Knappar
+J		knapp	st	JAS/st/override/knappar	JAS/vat/power	D30
+A		knapp	st	JAS/st/override/knappar	JAS/vat/power	D30
+S       knapp	st	JAS/st/override/knappar	JAS/vat/power	D30
+STR     knapp	st	JAS/st/override/knappar	JAS/vat/power	D30
+DL		knapp	st	JAS/st/override/knappar	JAS/vat/power	D30
+RR		knapp	st	JAS/st/override/knappar	JAS/vat/power	D30
+M		knapp	st	JAS/st/override/knappar	JAS/vat/power	D30
+B		knapp	st	JAS/st/override/knappar	JAS/vat/power	D30
+L		knapp	st	JAS/st/override/knappar	JAS/vat/power	D30
+GS		knapp	st	JAS/st/override/knappar	JAS/vat/power	D30
+IP		knapp	st	JAS/st/override/knappar	JAS/vat/power	D30
+D		knapp	st	JAS/st/override/knappar	JAS/vat/power	D30
+HVP     knapp	st	JAS/st/override/knappar	JAS/vat/power	D30
+IRB     knapp	st	JAS/st/override/knappar	JAS/vat/power	D30
+AK		knapp	st	JAS/st/override/knappar	JAS/vat/power	D30
+
+## Lampor indikator
+STR		lampa	st	JAS/lampprov/p1	JAS/vat/power	D22
+DL		lampa	st	JAS/lampprov/p1	JAS/vat/power	D22
+RR		lampa	st	JAS/lampprov/p1	JAS/vat/power	D22
+RJL		lampa	st	JAS/lampprov/p1	JAS/vat/power	D22
+tom		lampa	st	JAS/lampprov/p1	JAS/vat/power	D22
+BI		lampa	st	JAS/lampprov/p1	JAS/vat/power	D22
+TLS		lampa	st	JAS/lampprov/p1	JAS/vat/power	D22
+FRM		lampa	st	JAS/lampprov/p1	JAS/vat/power	D22
+SKT		lampa	st	JAS/lampprov/p1	JAS/vat/power	D22
+HVP		lampa	st	JAS/lampprov/p1	JAS/vat/power	D22
+IRB		lampa	st	JAS/lampprov/p1	JAS/vat/power	D22
+AK		lampa	st	JAS/lampprov/p1	JAS/vat/power	D22
+
+# VAT Larmtablån
+normsty		lampa	vat	JAS/lampprov/p1	JAS/vat/power	M32 2:PA0
+luftsys		lampa	vat	JAS/lampprov/p1	JAS/vat/power	M33 2:PA1
+hhp1		lampa	vat	JAS/lampprov/p1	JAS/vat/power	M34 ej klar
+hgen		lampa	vat	JAS/lampprov/p1	JAS/vat/power	M35 ej klar
+motor		lampa	vat	JAS/lampprov/p1	JAS/vat/power	M36 ej klar
+dragkr		lampa	vat	JAS/lampprov/p1	JAS/vat/power	M37 ej klar
+oljetr		lampa	vat	JAS/lampprov/p1	JAS/vat/power	M38 ej klar
+
+abumod		lampa	vat	JAS/lampprov/p1	JAS/vat/power	M39 2:PA7
+primdat		lampa	vat	JAS/lampprov/p1	JAS/vat/power	M40 2:PB0
+hydr1		lampa	vat	JAS/lampprov/p1	JAS/vat/power	M41 ej klar
+resgen		lampa	vat	JAS/lampprov/p1	JAS/vat/power	M42 ej klar
+mobrand		lampa	vat	JAS/lampprov/p1	JAS/vat/power	M43 ej klar
+apu			lampa	vat	JAS/lampprov/p1	JAS/vat/power	M44 ej klar
+apubrnd		lampa	vat	JAS/lampprov/p1	JAS/vat/power	M45 ej klar
+
+styrsak		lampa	vat	JAS/lampprov/p1	JAS/vat/power	M46 ej klar
+uppdrag		lampa	vat	JAS/lampprov/p1	JAS/vat/power	M47 2:PB7
+hydr2		lampa	vat	JAS/lampprov/p1	JAS/vat/power	M48 3:PA0
+likstrm		lampa	vat	JAS/lampprov/p1	JAS/vat/power	M49 ej klar
+landst		lampa	vat	JAS/lampprov/p1	JAS/vat/power	M50 ej klar
+bromsar		lampa	vat	JAS/lampprov/p1	JAS/vat/power	M51 ej klar
+streck1		lampa	vat	JAS/lampprov/p1	JAS/vat/power	M52 ej klar
+
+felinfo		lampa	vat	JAS/lampprov/p1	JAS/vat/power	M53 ej klar
+dator		lampa	vat	JAS/lampprov/p1	JAS/vat/power	M54 ej klar
+streck2		lampa	vat	JAS/lampprov/p1	JAS/vat/power	M55 3:PA7
+brasys		lampa	vat	JAS/lampprov/p1	JAS/vat/power	M56 3:PB0
+bramgd		lampa	vat	JAS/lampprov/p1	JAS/vat/power	M57 3:PB1
+oxykab		lampa	vat	JAS/lampprov/p1	JAS/vat/power	M58 3:PB2
+huvstol		lampa	vat	JAS/lampprov/p1	JAS/vat/power	M59 3:PB3
+
+
+
+#Knappar runt skärmar
+JAS/io/fi/knapp/knappram	int[12]		sys	unit	unit2	Description
+JAS/io/ti/knapp/knappram	int[12]		sys	unit	unit2	Description
+JAS/io/mi/knapp/knappram	int[12]		sys	unit	unit2	Description
+
+#Knappar styrspak
+fire		knapp	spak	JAS/frontpanel/override/knappar	JAS/vat/power	ej klar
+hat1_up		knapp	spak	JAS/frontpanel/override/knappar	JAS/vat/power	ej klar
+hat1_down		knapp	spak	JAS/frontpanel/override/knappar	JAS/vat/power	ej klar
+hat1_left		knapp	spak	JAS/frontpanel/override/knappar	JAS/vat/power	ej klar
+hat1_right		knapp	spak	JAS/frontpanel/override/knappar	JAS/vat/power	ej klar
+
+
+#Muspekare
+JAS/io/fi/pekare/x	    float	ti	unit	unit2	Muspekare
+JAS/io/fi/pekare/y	    float	ti	unit	unit2	Muspekare
+JAS/io/fi/pekare/active	    int	ti	unit	unit2	Muspekare
+JAS/io/fi/pekare/click	    int	ti	unit	unit2	Muspekare
+JAS/io/ti/pekare/x	    float	ti	unit	unit2	Muspekare
+JAS/io/ti/pekare/y	    float	ti	unit	unit2	Muspekare
+JAS/io/ti/pekare/active	    int	ti	unit	unit2	Muspekare
+JAS/io/ti/pekare/click	    int	ti	unit	unit2	Muspekare
+JAS/io/mi/pekare/x	    float	ti	unit	unit2	Muspekare
+JAS/io/mi/pekare/y	    float	ti	unit	unit2	Muspekare
+JAS/io/mi/pekare/active	    int	ti	unit	unit2	Muspekare
+JAS/io/mi/pekare/click	    int	ti	unit	unit2	Muspekare
+
+JAS/fi/poweroff		int		sys	unit	unit2	Om enhetern har ström 0 är ström på, 1 är ström av. Detta för att default ska va igång
+JAS/ti/poweroff		int		sys	unit	unit2	Om enhetern har ström 0 är ström på, 1 är ström av. Detta för att default ska va igång
+JAS/mi/poweroff		int		sys	unit	unit2	Om enhetern har ström 0 är ström på, 1 är ström av. Detta för att default ska va igång
+JAS/si/poweroff		int		sys	unit	unit2	Om enhetern har ström 0 är ström på, 1 är ström av. Detta för att default ska va igång
+
+JAS/fi/menu/menu	int	fi	unit	unit2	Vilken meny som är vald
+JAS/ti/menu/menu	int	ti	unit	unit2	Vilken meny som är vald
+JAS/mi/menu/menu	int	mi	unit	unit2	Vilken meny som är vald
+JAS/ti/menu/menu2	int	ti	unit	unit2	Vilken meny som är vald
+JAS/ti/menu/submenu	int	ti	unit	unit2	Vilken submeny som är vald
+
+JAS/ti/land/rikt	int	ti	unit	unit2	vald riktning på banan
+JAS/ti/land/bana	int	ti	unit	unit2	vald banan
+JAS/ti/land/bibana	int	ti	unit	unit2	bibana option 0 HB 1 Bibana
+JAS/ti/land/index	int	ti	unit	unit2	vald index i flygplatslistan
+JAS/ti/land/lmod	int	ti	unit	unit2	landningsmod
+JAS/ti/land/lat	    double	ti	unit	unit2	landningsmod
+JAS/ti/land/lon 	double	ti	unit	unit2	landningsmod
+JAS/ti/land/alt	    float	ti	unit	unit2	landningsmod
+JAS/ti/land/head	float	ti	unit	unit2	riktningen PÅ banan
+JAS/ti/land/bearing	float	ti	unit	unit2	riktningen till banan
+JAS/ti/land/dist	float	ti	unit	unit2	avstånd till banan
+
+JAS/ti/map/zoom		int	ti	unit	unit2	vald zoom
+JAS/ti/map/type		int	ti	unit	unit2	Vald option
+JAS/ti/map/color	int	ti	unit	unit2	Vald option
+JAS/ti/map/egla	int	ti	unit	unit2	Vald option
+
+# Pricken i HUD
+JAS/si/nav/prick_active  int   si  unit    unit2   x koordinat den ska ritas på
+JAS/si/nav/prick_x  float   si  unit    unit2   x koordinat den ska ritas på
+JAS/si/nav/prick_y  float   si  unit    unit2   från fartvektorn
+JAS/si/nav/heading  float   si  unit    unit2   riktning som ska indikeras i kompassen
+JAS/si/nav/bana_x  float   si  unit    unit2   x koordinat den ska ritas på
+JAS/si/nav/bana_y  float   si  unit    unit2   från fartvektorn
+JAS/si/nav/lat  float   si  unit    unit2   från fartvektorn
+JAS/si/nav/lon  float   si  unit    unit2   från fartvektorn
+JAS/si/nav/bearing  float   si  unit    unit2   bearing är vilken kurs som går rakt mot målet relativt flygplanet
+JAS/si/nav/course  float   si  unit    unit2   course är vinkeln på tex landingsbanan i världen
+JAS/si/nav/alt  float   si  unit    unit2   höjd över havet vi önskar flyga på
+JAS/si/nav/dist  float   si  unit    unit2   avstånd
+JAS/si/nav/namn  int[4]   si  unit    unit2   Namn på waypoint
+JAS/si/nav/eta  float   si  unit    unit2   Namn på waypoint
+
+# Radar
+
+JAS/radar/aktiv     int     radar unit unit2 Om radarn är igång
+JAS/radar/range     float   radar unit unit2 Räckvidd i meter
+JAS/radar/bore      float   radar unit unit2 vinkel den scannar inom
+JAS/radar/bore_off  float   radar unit unit2 sido offset på vinkeln
+JAS/radar/ping      int[20] radar unit unit2 Räknare när mål är upptäckt
+JAS/radar/target    int     radar unit unit2 Låst mål
+
+# Vapen
+JAS/vapen/mode     int     radar unit unit2 Vapenväljarens läge 0 okänt, 1 redo, 2 operativ, 3 sim, 4 fikt
+
+# Uppdrags menyn
+JAS/udat/steg       int udat unit unit2 Index för vald 
+JAS/udat/list       int udat unit unit2 Index för vald lista
+JAS/udat/heading    float   si  unit    unit2   riktning till aktuell brytpunkt
+JAS/udat/distance   float   si  unit    unit2   avstånd till aktuell brytpunkt
+JAS/udat/speed      float   si  unit    unit2   avstånd till aktuell brytpunkt
+JAS/udat/alt        float   si  unit    unit2   avstånd till aktuell brytpunkt
+JAS/udat/lat        double   si  unit    unit2   gps till aktuell brytpunkt
+JAS/udat/lon        double   si  unit    unit2   gps till aktuell brytpunkt
+JAS/udat/namn       int[4] si unit unit2    Namn på brytpunkt 
+
+
+
+#Last line, keep this
