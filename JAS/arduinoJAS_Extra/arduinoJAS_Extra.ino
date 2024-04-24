@@ -652,12 +652,13 @@ void handleConfigMessage(HardwareSerial& inSerial) {
 //        pcSerial.print("extra: ");
 //        pcSerial.println(pinExtra);
     setConfig(pinNr, pinmode, pinExtra);
+    setupPinN(pinNr);
     waitForData(inSerial, 2);
     data = inSerial.read();
 //    pcSerial.println(data);
   }
   
-  setupAllPins();
+  //setupAllPins();
 //  pcSerial.println("end handleConfig");
 }
 
