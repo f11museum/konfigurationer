@@ -1,0 +1,110 @@
+I
+1100 Version
+networking_disclose_multiplayer 0
+networking_disclose_flir 0
+no_rwx_download_failed_msg 0
+save_flight_type 0
+wxr_disclose_atmosphere 1
+ios_disclose_weight_and_balance 1
+no_warn_gyro_drift 0
+flight_school_tab 0
+wxr_disclose_change_over_time 0
+ios_disclose_location 1
+_alert_slow_sim 0
+selected_tab 1
+show_old_ai_planes 0
+confirm_quit 0
+networking_disclose_ports 0
+networking_disclose_data_io 0
+video_1208 1
+wxr_disclose_thermals 0
+pixel_multiplier 1.000000
+wxr_disclose_runway_conditions 1
+networking_disclose_iphone 0
+last_device BU0836X Interface
+projection_tab 0
+auto_readback_for_atc 1
+ios_disclose_weather 0
+reset_on_wreck 0
+map_type 0
+networking_disclose_instructor 0
+atc_cmd_window_splitter 133.000000
+ios_disclose_time 1
+map_north_up 1
+networking_disclose_external_visuals 0
+P monitor_10 _offsets 0
+P monitor_10 _visuals 0
+P monitor_10 _field_of_view 0
+P monitor_4 _offsets 0
+P monitor_4 _visuals 0
+P map_layer map_layer_Compass_Rose 1
+P monitor_14 _offsets 0
+P monitor_14 _visuals 0
+P monitor_14 _field_of_view 0
+P pilot-430 gps_virtual 0
+P pilot-430 gps_window_visible 0
+P monitor_6 _offsets 0
+P monitor_6 _visuals 0
+P monitor_6 _field_of_view 0
+P pilot-530 gps_window_visible 0
+P monitor_7 _offsets 0
+P monitor_7 _visuals 0
+P monitor_7 _field_of_view 0
+P pilot-1000 gps_window_visible 0
+P monitor_11 _offsets 0
+P monitor_11 _visuals 0
+P monitor_17 _offsets 0
+P monitor_17 _visuals 0
+P monitor_16 _offsets 0
+P monitor_16 _visuals 0
+P monitor_12 _offsets 0
+P monitor_12 _visuals 0
+P monitor_9 _offsets 0
+P monitor_9 _visuals 0
+P monitor_3 _offsets 0
+P monitor_3 _visuals 0
+P copilot-430 gps_window_visible 0
+P monitor_0 _offsets 0
+P monitor_0 _visuals 0
+P monitor_5 _offsets 0
+P monitor_5 _visuals 0
+P monitor_18 _offsets 0
+P monitor_18 _visuals 0
+P center-1000 gps_window_visible 0
+P monitor_15 _offsets 0
+P monitor_15 _visuals 0
+P monitor_2 _offsets 0
+P monitor_2 _visuals 0
+P window_state main_menu v=0 p=0 m=0 b=0,0,1920,1080
+P window_state exvis_standby v=0 p=0 m=0 b=0,0,0,0
+P window_state raininspector v=0 p=0 m=0 b=0,0,0,0
+P window_state pluginadmin v=0 p=0 m=0 b=38,23,588,643
+P window_state vramprofiler v=0 p=0 m=0 b=0,0,0,0
+P window_state microprofiler v=0 p=0 m=0 b=0,0,0,0
+P window_state particle_browser v=0 p=0 m=0 b=0,0,0,0
+P window_state texture_browser v=0 p=0 m=0 b=0,0,0,0
+P window_state autopilot_constants v=0 p=0 m=0 b=0,0,0,0
+P window_state projection_params v=0 p=0 m=0 b=0,0,0,0
+P window_state key_shortcuts v=0 p=0 m=0 b=0,0,0,0
+P window_state settings v=0 p=0 m=0 b=160,0,1760,1080
+P window_state atc_window v=0 p=0 m=0 b=300,300,850,665
+P window_state save_flight_window v=0 p=0 m=0 b=0,0,0,0
+P window_state logbook_window v=0 p=0 m=0 b=0,0,0,0
+P window_state text_file_window v=0 p=0 m=0 b=0,0,0,0
+P window_state checklist_window v=0 p=0 m=0 b=0,0,0,0
+P window_state weather_map v=0 p=0 m=0 b=0,0,0,0
+P window_state ios v=0 p=0 m=0 b=514,130,1538,772
+P window_state map v=0 p=0 m=0 b=1052,403,2118,923
+P window_state data_out v=0 p=0 m=0 b=0,0,0,0
+P window_state replay_controls v=0 p=0 m=0 b=0,0,0,0
+P window_state menu_bar v=1 p=0 m=0 b=0,0,1920,1080
+P window_state video_recording_config v=0 p=0 m=0 b=0,0,0,0
+P window_state ground_handling_window v=0 p=0 m=0 b=0,0,0,0
+P monitor_13 _offsets 0
+P monitor_13 _visuals 0
+P monitor_19 _offsets 0
+P monitor_19 _visuals 0
+P monitor_1 _offsets 0
+P monitor_1 _visuals 0
+P monitor_8 _offsets 0
+P monitor_8 _visuals 0

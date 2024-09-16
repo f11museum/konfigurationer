@@ -1,0 +1,35 @@
+I
+10 Version
+_acf_path_rel Aircraft/20240722_DWSim SF-37 12/DWSim_VSF_37.acf~.acf
+_dob_x 0.000000
+_dob_y 0.000000
+_dob_z -10.000000
+_the 0.000000
+_psi 250.000000
+_phi -30.000000
+_move_cons 0
+_draw_type 11
+_pref_window_osx -226.000000
+_pref_window_osy -52.000000
+_show_panel 1
+_show_pick_inst 1
+_show_inst_prop 1
+_show_inst_list 1
+_show_generics 0
+_animate_insts 0
+_show_inst_overlays 1
+_show_inst_overlays 1
+_opacity 1.000000
+_show_errors 0
+_show_hud_guides 1
+_show_hotspots 0
+_is_metric 0
+_split_left 1672
+_split_right 320
+_split_rv 384
+_split_lv 220
+_show_inst_desc 1
+_show_inst_prev 1
+_hide_int_spot0 0
+_hide_int_spot1 0
+_hide_int_spot2 0

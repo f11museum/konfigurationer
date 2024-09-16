@@ -1,0 +1,14 @@
+A
+1110 version
+FEATURES
+
+VERSION_LOW: 120000 # The following feature rules apply only if your X-Plane version is at least 12.00
+VERSION_HIGH: 130000 # The following feature rules do *not* apply if you're newer than 13.00
+
+# Allow IAP for devs build!
+FEATURE: IAP 1 APL
+FEATURE: IAP 1 IBM
+FEATURE: IAP 1 LIN
+FEATURE: MMO 1
+FEATURE: MMO_TRIAL 1
+

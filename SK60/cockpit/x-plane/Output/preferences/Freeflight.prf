@@ -1,0 +1,335 @@
+I
+1100 Version
+_default_to_ramps 0
+weight_and_balance_use_metric 1
+_metric_visibility 1
+_num_other_aircraft 0
+_airport ESKN
+_track_system_date_time 0
+_show_old_versions 1
+_time 16.09
+_gmt_offset 0
+_date 162
+_editing_mode 0
+_aircraft Aircraft/SK60/sk60w.acf
+_wxr_def version=2 visibility_sm=100 storms_ratio=0 thermal_vvi_fpm=500 runway_friction_conditions_are_uniform=1 wave_height_ft=0.5 wave_direction_deg=0 temp=15.6153 pressure=101325 runway_friction=0 precipitation_ratio=0 thermal_coverage_ratio=0 thermal_altitude_ft_agl=5000 [ clouds version=1 height_ft_amsl=46000 thickness_ft=0 type=0 ] [ clouds version=1 height_ft_amsl=48000 thickness_ft=0 type=0 ] [ clouds version=1 height_ft_amsl=50000 thickness_ft=0 type=0 ] [ winds version=1 altitude_ft_amsl=46000 direction_mag_deg=0 speed_kts=0 gust_speed_increase_kts=0 shear_direction_mag_deg=0 turbulence_ratio=0 ] [ winds version=1 altitude_ft_amsl=48000 direction_mag_deg=0 speed_kts=0 gust_speed_increase_kts=0 shear_direction_mag_deg=0 turbulence_ratio=0 ] [ winds version=1 altitude_ft_amsl=50000 direction_mag_deg=0 speed_kts=0 gust_speed_increase_kts=0 shear_direction_mag_deg=0 turbulence_ratio=0 ] 
+_wxr_use_rvr 0
+P _rwy_or_ramp ESKN 0_1
+P _rwy_or_ramp ESSP 1_1
+P _rwy_or_ramp 1031X 0_1
+P _rwy_or_ramp ESCX 0_0
+P _rwy_or_ramp SJOS 0_0
+P _rwy_or_ramp ESCF 0_0
+P _rwy_or_ramp ESCM 0_0
+P _rwy_or_ramp ESCN 1_1
+P _rwy_or_ramp KDAN 0_0
+P _rwy_or_ramp LEIB 0_0
+P _rwy_or_ramp ESCK 0_1
+P _rwy_or_ramp XENNK 0_0
+P _rwy_or_ramp LPMA 0_0
+P _rwy_or_ramp ENGM 0_0
+P _rwy_or_ramp ESPA 0_0
+P _rwy_or_ramp ESNQ 0_0
+P _rwy_or_ramp ESTL 5_1
+P _rwy_or_ramp KESN 0_0
+P _rwy_or_ramp ESTA 0_0
+P _rwy_or_ramp ESKX 0_0
+P _rwy_or_ramp ESSA 0_1
+P _rwy_or_ramp ESSB 0_0
+P _rwy_or_ramp EYSA 0
+P _rwy_or_ramp ESKP 0_0
+P _rwy_or_ramp ESOW 2
+P _rwy_or_ramp KNKX 1_1
+P _rwy_or_ramp GCLA 0_1
+P _rwy_or_ramp ID33 0_0
+P _rwy_or_ramp ESDF 4
+P _rwy_or_ramp ESSZ 2
+P _rwy_or_ramp LSTS 0_1
+P _rwy_or_ramp LSZS 0_0
+P _rwy_or_ramp LSGK 0_0
+P _rwy_or_ramp ESCY 0_0
+P _rwy_or_ramp ESIA 0
+P _rwy_or_ramp BIKF 0_0
+P _rwy_or_ramp BIGR 0_0
+P _rwy_or_ramp ESIB 0
+P _rwy_or_ramp LFML 0_0
+P _rwy_or_ramp LSZH 1_1
+P _rwy_or_ramp LFLL 38
+P _rwy_or_ramp LFLY 0
+P _rwy_or_ramp LEPA 1_1
+P _rwy_or_ramp LTAI 0
+P _fuel_tank __AircraftSK60sk60wacf_3 740.950439
+P _fuel_tank __AircraftSK60sk60wacf_2 740.854431
+P _fuel_tank __AircraftSK60sk60wacf_1 401.494324
+P _fuel_tank __AircraftSK60sk60wacf_0 401.494324
+P _fuel_tank __AircraftSK60vvi5000sk60wacf_3 764.273193
+P _fuel_tank __AircraftSK60vvi5000sk60wacf_2 764.273193
+P _fuel_tank __AircraftSK60vvi5000sk60wacf_1 397.236267
+P _fuel_tank __AircraftSK60vvi5000sk60wacf_0 397.236267
+P _fuel_tank __AircraftLaminarResearchCessna172SPCessna172SPacf_1 87.500000
+P _fuel_tank __AircraftLaminarResearchCessna172SPCessna172SPacf_0 87.500000
+P _fuel_tank __Aircraftsaab105ask60wacf_0 1056.107544
+P _fuel_tank __Aircraftsaab105ask60acf_3 386.233215
+P _fuel_tank __Aircraftsaab105ask60acf_2 386.233215
+P _fuel_tank __Aircraftsaab105ask60acf_1 200.747360
+P _fuel_tank __Aircraftsaab105ask60acf_0 200.747360
+P _fuel_tank __Aircraftsaab105asaab1051acf_3 386.233215
+P _fuel_tank __Aircraftsaab105asaab1051acf_2 386.233215
+P _fuel_tank __Aircraftsaab105asaab1051acf_1 200.747360
+P _fuel_tank __Aircraftsaab105asaab1051acf_0 200.747360
+P _fuel_tank __Aircraftsaab105asaab105oeacf_3 386.233215
+P _fuel_tank __Aircraftsaab105asaab105oeacf_2 386.233215
+P _fuel_tank __Aircraftsaab105asaab105oeacf_1 200.747360
+P _fuel_tank __Aircraftsaab105asaab105oeacf_0 200.747360
+P _fuel_tank __AircraftExtraAircraftsaab105AIsk60wacf_3 602.888367
+P _fuel_tank __AircraftExtraAircraftsaab105AIsk60wacf_2 602.806213
+P _fuel_tank __AircraftExtraAircraftsaab105AIsk60wacf_1 399.010834
+P _fuel_tank __AircraftExtraAircraftsaab105AIsk60wacf_0 399.010834
+P _fuel_tank __Aircraftmuseumsaab105RM15upsk60wacf_3 292.560608
+P _fuel_tank __Aircraftmuseumsaab105RM15upsk60wacf_2 292.547821
+P _fuel_tank __Aircraftmuseumsaab105RM15upsk60wacf_1 292.452728
+P _fuel_tank __Aircraftmuseumsaab105RM15upsk60wacf_0 292.401093
+P _fuel_tank __Aircraftmuseumsaab105sk60wacf_3 295.932770
+P _fuel_tank __Aircraftmuseumsaab105sk60wacf_2 295.945038
+P _fuel_tank __Aircraftmuseumsaab105sk60wacf_1 295.936493
+P _fuel_tank __Aircraftmuseumsaab105sk60wacf_0 295.879913
+P _fuel_tank __AircraftExtraAircraftsaab105AIBsk60wacf_3 684.827148
+P _fuel_tank __AircraftExtraAircraftsaab105AIBsk60wacf_2 684.724243
+P _fuel_tank __AircraftExtraAircraftsaab105AIBsk60wacf_1 399.010834
+P _fuel_tank __AircraftExtraAircraftsaab105AIBsk60wacf_0 399.010834
+P _fuel_tank __Aircraftmuseumflorettepurplesk60wacf_3 332.419525
+P _fuel_tank __Aircraftmuseumflorettepurplesk60wacf_2 332.418976
+P _fuel_tank __Aircraftmuseumflorettepurplesk60wacf_1 332.341370
+P _fuel_tank __Aircraftmuseumflorettepurplesk60wacf_0 332.289825
+P _fuel_tank __AircraftmuseumviggenB37acf_2 3328.666748
+P _fuel_tank __AircraftmuseumviggenB37acf_1 3230.765137
+P _fuel_tank __AircraftmuseumviggenB37acf_0 3230.765137
+P _fuel_tank __AircraftExtraAircraftViggenJA37VIGGEN37acf_2 0.000000
+P _fuel_tank __AircraftExtraAircraftViggenJA37VIGGEN37acf_1 2447.549805
+P _fuel_tank __AircraftExtraAircraftViggenJA37VIGGEN37acf_0 2447.549805
+P _fuel_tank __AircraftmuseumAIPIPERPA34SenecaIICarSenecaacf_1 147.649994
+P _payload _AircraftSK60sk60wacf 584.516968
+P _payload _AircraftSK60vvi5000sk60wacf 584.516968
+P _payload _AircraftLaminarResearchCessna172SPCessna172SPacf 125.550003
+P _payload _Aircraftsaab105ask60wacf 584.516907
+P _payload _Aircraftsaab105ask60acf 534.251526
+P _payload _Aircraftsaab105asaab1051acf 534.251526
+P _payload _Aircraftsaab105asaab105oeacf 1308.553467
+P _payload _AircraftExtraAircraftsaab105AIsk60wacf 584.516907
+P _payload _Aircraftmuseumsaab105RM15upsk60wacf 4623.469238
+P _payload _Aircraftmuseumsaab105sk60wacf 774.428406
+P _payload _AircraftExtraAircraftsaab105AIBsk60wacf 584.516907
+P _payload _Aircraftmuseumflorettepurplesk60wacf 584.516968
+P _payload _AircraftmuseumviggenB37acf 0.000000
+P _payload _AircraftExtraAircraftViggenJA37VIGGEN37acf 2975.625000
+P _payload _AircraftmuseumAIPIPERPA34SenecaIICarSenecaacf 267.300018
+P _payload _Aircraftmuseumflorettblacksk60wacf 584.516968
+P _payload _AircraftmuseumSAABs35DrakenXP1105J35acf 1745.700073
+P _payload _AircraftmuseumPiperPA31NavajoF11museumCarPA31acf 380.400024
+P _payload _AircraftmuseumPIPERPA34SenecaIICarSenecaacf 267.300018
+P _payload _AircraftExtraAircraftSaabSafariSaabSafariacf 183.287292
+P _payload _Aircraftmuseumsaabflorettredsk60wacf 584.516968
+P _payload _AircraftLjudokklarPIPERPA34SenecaIICarSenecaacf 267.300018
+P _payload _Aircraftmuseum8cREDPA34SenecaIICarSenecaacf 267.300018
+P _payload _Aircraftmuseumsaabflorettblacksk60wacf 584.516968
+P _payload _AircraftLaminarResearchKingAirC90BC90Bacf 464.986542
+P _payload _AircraftmuseumSaabflorettsk60wacf 584.516968
+P _payload _AircraftLaminarResearchMcDonnellDouglasF4F4acf 4151.550293
+P _livery _AircraftSK60vvi5000sk60wacf Default
+P _livery _AircraftLaminarResearchLockheedSR71SR71acf Default
+P _livery _Aircraftsaab105ask60acf Default
+P _livery _Aircraftsaab105asaab1051acf Default
+P _livery _Aircraftsaab105asaab105oeacf Default
+P _livery _Aircraftsaab105ask60wacf Default
+P _livery _AircraftSK60sk60wacf Default
+P _livery _AircraftmuseumviggenB37acf Default
+P _livery _AircraftExtraAircraftsaab105AIBsk60wacf Default
+P _livery _Aircraftmuseumsaab105sk60wacf 137
+P _livery _AircraftExtraAircraftPIPERPA34SenecaIIcolaCarSenecaacf Cocacola
+P _livery _AircraftmuseumAIPIPERPA34SenecaIICarSenecaacf Default
+P _livery _AircraftmuseumVampireFBS28BF11DHVampireacf Default
+P _livery _AircraftExtraAircraftsaab105AIsk60wacf 137
+P _livery _AircraftmuseumTP84HerculesC130acf Default
+P _livery _AircraftExtraAircraftHughes500DHughes500Dacf Default
+P _livery _AircraftmuseumSupermarineSpitfireMkIXSpitfireLFMkIXClippedSpitfireLFMkIXM66ClippedBSPITFIREacf Default
+P _livery _AircraftmuseumPIPERPA34SenecaIICarSenecaacf Default
+P _livery _AircraftmuseumPiperPA31NavajoF11museumCarPA31acf Default
+P _livery _AircraftLjudokklarPIPERPA34SenecaIICarSenecaacf Default
+P _livery _AircraftExtraAircraftSaabSafariSaabSafariacf Default
+P _livery _Aircraftmuseum8cREDPA34SenecaIICarSenecaacf Default
+P _livery _AircraftExtraAircraftSA315BLamaXP1140lamaacf Default
+P _livery _AircraftmuseumSAABs35DrakenXP1105J35acf Default
+P _livery _AircraftLaminarResearchBaronB58Baron58acf Default
+P _livery _Aircraftmuseumsaab105RM15upsk60wacf Default
+P _livery _Aircraftmuseumflorettepurplesk60wacf Default
+P _livery _AircraftExtraAircraftSAAB39EAIGripenSAAB39EGripenacf Default
+P _livery _AircraftExtraAircraftSaabs32cLansenlansenacf Default
+P _livery _Aircraftmuseumgreengoblinsk60acf Default
+P _livery _AircraftExtraAircraftSaabs32cLansen815lansen815acf Default
+P _livery _AircraftExtraAircraftViggenJA37VIGGEN37acf Default
+P _livery _AircraftLaminarResearchSikorskyS76S76Cacf Default
+P _livery _AircraftExtraAircraftgripenGripen39Ev0953SAAB39EGripenacf Default
+P _livery _Aircraftmuseumflorettblacksk60wacf Default
+P _livery _Aircraftmuseumsaabflorettredsk60wacf Default
+P _livery _AircraftLaminarResearchKingAirC90BC90Bacf Default
+P _livery _Aircraftmuseumsaabflorettblacksk60wacf Default
+P _livery _AircraftmuseumSaabflorettsk60wacf Default
+P _livery _AircraftLaminarResearchMcDonnellDouglasF4F4acf Default
+P _livery _AircraftLaminarResearchCessna172SPCessna172SPacf Default
+P _start_is_rwy ESKN 1
+P _start_is_rwy ESSP 1
+P _start_is_rwy 1031X 1
+P _start_is_rwy ESCX 1
+P _start_is_rwy SJOS 1
+P _start_is_rwy ESCF 1
+P _start_is_rwy ESCM 1
+P _start_is_rwy ESCN 1
+P _start_is_rwy KDAN 1
+P _start_is_rwy LEIB 1
+P _start_is_rwy ESCK 1
+P _start_is_rwy XENNK 1
+P _start_is_rwy LPMA 1
+P _start_is_rwy ENGM 1
+P _start_is_rwy ESPA 1
+P _start_is_rwy ESNQ 1
+P _start_is_rwy ESTL 1
+P _start_is_rwy KESN 1
+P _start_is_rwy ESTA 1
+P _start_is_rwy ESKX 1
+P _start_is_rwy ESSA 1
+P _start_is_rwy ESSB 1
+P _start_is_rwy EYSA 0
+P _start_is_rwy ESKP 1
+P _start_is_rwy ESOW 0
+P _start_is_rwy KNKX 1
+P _start_is_rwy GCLA 1
+P _start_is_rwy ID33 1
+P _start_is_rwy ESDF 0
+P _start_is_rwy ESSZ 0
+P _start_is_rwy LSTS 1
+P _start_is_rwy LSZS 1
+P _start_is_rwy LSGK 1
+P _start_is_rwy ESCY 1
+P _start_is_rwy ESIA 0
+P _start_is_rwy BIKF 1
+P _start_is_rwy BIGR 1
+P _start_is_rwy ESIB 0
+P _start_is_rwy LFML 1
+P _start_is_rwy LSZH 1
+P _start_is_rwy LFLL 0
+P _start_is_rwy LFLY 0
+P _start_is_rwy LEPA 1
+P _start_is_rwy LTAI 0
+P _other_aircraft 0 Aircraft/museum/saab105/sk60w.acf
+P _other_aircraft 1 Aircraft/museum/saab105/sk60w.acf
+P _other_aircraft 2 Aircraft/Extra Aircraft/saab105_AI/sk60w.acf
+P _other_aircraft 3 Aircraft/Extra Aircraft/Viggen JA37/VIGGEN37.acf
+P _other_aircraft 4 Aircraft/museum/TP-84 Hercules/C-130.acf
+P _other_aircraft 5 Aircraft/museum/TP-84 Hercules/C-130.acf
+P _other_aircraft 6 Aircraft/Extra Aircraft/PIPER_PA34_Seneca_II cola/Car_Seneca.acf
+P _other_aircraft 7 Aircraft/museum/TP-84 Hercules/C-130.acf
+P _other_aircraft 8 Aircraft/museum/TP-84 Hercules/C-130.acf
+P _other_aircraft 9 Aircraft/museum/TP-84 Hercules/C-130.acf
+P _other_aircraft 10 Aircraft/museum/TP-84 Hercules/C-130.acf
+P _other_aircraft 11 Aircraft/museum/TP-84 Hercules/C-130.acf
+P _other_aircraft 12 Aircraft/museum/TP-84 Hercules/C-130.acf
+P _other_aircraft 13 Aircraft/museum/TP-84 Hercules/C-130.acf
+P _other_aircraft 14 Aircraft/museum/TP-84 Hercules/C-130.acf
+P _other_aircraft 15 Aircraft/museum/TP-84 Hercules/C-130.acf
+P _other_aircraft 16 Aircraft/museum/TP-84 Hercules/C-130.acf
+P _other_aircraft 17 Aircraft/museum/TP-84 Hercules/C-130.acf
+P _other_aircraft 18 Aircraft/museum/TP-84 Hercules/C-130.acf
+P _cg _AircraftSK60sk60wacf 0.000000
+P _cg _AircraftSK60vvi5000sk60wacf 0.000000
+P _cg _AircraftLaminarResearchCessna172SPCessna172SPacf 0.000000
+P _cg _Aircraftsaab105ask60wacf 0.000000
+P _cg _Aircraftsaab105ask60acf 0.000000
+P _cg _Aircraftsaab105asaab1051acf 0.000000
+P _cg _Aircraftsaab105asaab105oeacf 0.000000
+P _cg _AircraftExtraAircraftsaab105AIsk60wacf 0.000000
+P _cg _Aircraftmuseumsaab105RM15upsk60wacf 0.000000
+P _cg _Aircraftmuseumsaab105sk60wacf 0.000000
+P _cg _AircraftExtraAircraftsaab105AIBsk60wacf 0.000000
+P _cg _Aircraftmuseumflorettepurplesk60wacf 0.000000
+P _cg _AircraftmuseumviggenB37acf 0.000000
+P _cg _AircraftExtraAircraftViggenJA37VIGGEN37acf 0.000000
+P _cg _AircraftmuseumAIPIPERPA34SenecaIICarSenecaacf 0.000000
+P _cg _Aircraftmuseumflorettblacksk60wacf 0.000000
+P _cg _AircraftmuseumSAABs35DrakenXP1105J35acf 0.000000
+P _cg _AircraftmuseumPiperPA31NavajoF11museumCarPA31acf 0.000000
+P _cg _AircraftmuseumPIPERPA34SenecaIICarSenecaacf 0.000000
+P _cg _AircraftExtraAircraftSaabSafariSaabSafariacf 0.000000
+P _cg _Aircraftmuseumsaabflorettredsk60wacf 0.000000
+P _cg _AircraftLjudokklarPIPERPA34SenecaIICarSenecaacf 0.000000
+P _cg _Aircraftmuseum8cREDPA34SenecaIICarSenecaacf 0.000000
+P _cg _Aircraftmuseumsaabflorettblacksk60wacf 0.000000
+P _cg _AircraftLaminarResearchKingAirC90BC90Bacf 0.000000
+P _cg _AircraftmuseumSaabflorettsk60wacf 0.000000
+P _cg _AircraftLaminarResearchMcDonnellDouglasF4F4acf 0.000000
+P _other_aircraft_livery 1 137
+P _other_aircraft_livery 2 139
+P _other_aircraft_livery 0 137
+P _other_aircraft_livery 6 Cocacola
+P _other_aircraft_combat_role 0 noncombatant
+P _other_aircraft_combat_role 1 noncombatant
+P _other_aircraft_combat_role 2 noncombatant
+P _other_aircraft_combat_role 3 noncombatant
+P _other_aircraft_combat_role 4 noncombatant
+P _other_aircraft_combat_role 5 noncombatant
+P _other_aircraft_combat_role 6 noncombatant
+P _other_aircraft_combat_role 7 noncombatant
+P _other_aircraft_combat_role 8 noncombatant
+P _other_aircraft_combat_role 9 noncombatant
+P _other_aircraft_combat_role 10 noncombatant
+P _other_aircraft_combat_role 11 noncombatant
+P _other_aircraft_combat_role 12 noncombatant
+P _other_aircraft_combat_role 13 noncombatant
+P _other_aircraft_combat_role 14 noncombatant
+P _other_aircraft_combat_role 15 noncombatant
+P _other_aircraft_combat_role 16 noncombatant
+P _other_aircraft_combat_role 17 noncombatant
+P _other_aircraft_combat_role 18 noncombatant
+P _weapon __AircraftExtraAircraftSaabSafariSaabSafariacf_7 Lund Spike.wpn
+P _weapon __AircraftExtraAircraftSaabSafariSaabSafariacf_6 Lund Spike.wpn
+P _weapon __AircraftExtraAircraftSaabSafariSaabSafariacf_5 Lund Spike.wpn
+P _weapon __AircraftExtraAircraftSaabSafariSaabSafariacf_4 Lund Spike.wpn
+P _weapon __AircraftExtraAircraftSaabSafariSaabSafariacf_3 Lund Spike.wpn
+P _weapon __AircraftExtraAircraftSaabSafariSaabSafariacf_2 Lund Spike.wpn
+P _weapon __AircraftExtraAircraftSaabSafariSaabSafariacf_1 chaff.wpn
+P _weapon __AircraftExtraAircraftSaabSafariSaabSafariacf_0 flare.wpn
+P _weapon __AircraftLaminarResearchMcDonnellDouglasF4F4acf_8 drop_tank.wpn
+P _weapon __AircraftLaminarResearchMcDonnellDouglasF4F4acf_7 AIM9-Sidewinder.wpn
+P _weapon __AircraftLaminarResearchMcDonnellDouglasF4F4acf_6 AIM9-Sidewinder.wpn
+P _weapon __AircraftLaminarResearchMcDonnellDouglasF4F4acf_5 AIM9-Sidewinder.wpn
+P _weapon __AircraftLaminarResearchMcDonnellDouglasF4F4acf_4 AIM9-Sidewinder.wpn
+P _weapon __AircraftLaminarResearchMcDonnellDouglasF4F4acf_3 AIM7-Sparrow.wpn
+P _weapon __AircraftLaminarResearchMcDonnellDouglasF4F4acf_2 AIM7-Sparrow.wpn
+P _weapon __AircraftLaminarResearchMcDonnellDouglasF4F4acf_1 AIM7-Sparrow.wpn
+P _weapon __AircraftLaminarResearchMcDonnellDouglasF4F4acf_0 AIM7-Sparrow.wpn
+P _timestamp _AircraftSK60sk60wacf 1675811072.000000
+P _timestamp _AircraftSK60vvi5000sk60wacf 1698050432.000000
+P _timestamp _AircraftLaminarResearchCessna172SPCessna172SPacf 1596270592.000000
+P _timestamp _Aircraftsaab105ask60wacf 1697739520.000000
+P _timestamp _Aircraftsaab105ask60acf 1697730944.000000
+P _timestamp _Aircraftsaab105asaab1051acf 1569481728.000000
+P _timestamp _Aircraftsaab105asaab105oeacf 1569481728.000000
+P _timestamp _AircraftExtraAircraftsaab105AIsk60wacf 1656801920.000000
+P _timestamp _Aircraftmuseumsaab105RM15upsk60wacf 1609695360.000000
+P _timestamp _Aircraftmuseumsaab105sk60wacf 1595585536.000000
+P _timestamp _AircraftExtraAircraftsaab105AIBsk60wacf 1655995648.000000
+P _timestamp _Aircraftmuseumflorettepurplesk60wacf 1599469056.000000
+P _timestamp _AircraftmuseumviggenB37acf 1674141696.000000
+P _timestamp _AircraftExtraAircraftViggenJA37VIGGEN37acf 1595585536.000000
+P _timestamp _AircraftmuseumAIPIPERPA34SenecaIICarSenecaacf 1628244224.000000
+P _timestamp _Aircraftmuseumflorettblacksk60wacf 1599473920.000000
+P _timestamp _AircraftmuseumSAABs35DrakenXP1105J35acf 1609024384.000000
+P _timestamp _AircraftmuseumPiperPA31NavajoF11museumCarPA31acf 1622932608.000000
+P _timestamp _AircraftmuseumPIPERPA34SenecaIICarSenecaacf 1623101568.000000
+P _timestamp _AircraftExtraAircraftSaabSafariSaabSafariacf 1595586176.000000
+P _timestamp _Aircraftmuseumsaabflorettredsk60wacf 1595586304.000000
+P _timestamp _AircraftLjudokklarPIPERPA34SenecaIICarSenecaacf 1623101568.000000
+P _timestamp _Aircraftmuseum8cREDPA34SenecaIICarSenecaacf 1611599232.000000
+P _timestamp _Aircraftmuseumsaabflorettblacksk60wacf 1595586176.000000
+P _timestamp _AircraftLaminarResearchKingAirC90BC90Bacf 1594813696.000000
+P _timestamp _AircraftmuseumSaabflorettsk60wacf 1589972352.000000
+P _timestamp _AircraftLaminarResearchMcDonnellDouglasF4F4acf 1577957120.000000

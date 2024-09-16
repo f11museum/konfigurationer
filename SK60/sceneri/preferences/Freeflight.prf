@@ -1,0 +1,34 @@
+I
+1100 Version
+_num_other_aircraft 0
+_airport ESKN
+_track_system_date_time 0
+_time 12.00
+_gmt_offset 0
+_date 80
+_editing_mode 0
+_aircraft Aircraft/SK60/sk60w.acf
+_wxr_def version=2 visibility_sm=100 storms_ratio=0 thermal_vvi_fpm=0 runway_friction_conditions_are_uniform=1 wave_height_ft=0.5 wave_direction_deg=0 temp=14.134 pressure=101325 runway_friction=0 precipitation_ratio=0 thermal_coverage_ratio=0 thermal_altitude_ft_agl=1000 [ clouds version=1 height_ft_amsl=5000 thickness_ft=2000 type=0 ] [ clouds version=1 height_ft_amsl=13000 thickness_ft=2000 type=0 ] [ clouds version=1 height_ft_amsl=21000 thickness_ft=2000 type=0 ] [ winds version=1 altitude_ft_amsl=2000 direction_mag_deg=0 speed_kts=0 gust_speed_increase_kts=0 shear_direction_mag_deg=0 turbulence_ratio=0 ] [ winds version=1 altitude_ft_amsl=12000 direction_mag_deg=0 speed_kts=0 gust_speed_increase_kts=0 shear_direction_mag_deg=0 turbulence_ratio=0 ] [ winds version=1 altitude_ft_amsl=22000 direction_mag_deg=0 speed_kts=0 gust_speed_increase_kts=0 shear_direction_mag_deg=0 turbulence_ratio=0 ] 
+P _rwy_or_ramp ESKN 0_1
+P _rwy_or_ramp EFMA 0_0
+P _rwy_or_ramp ESSP 1_0
+P _rwy_or_ramp ESSB 0_1
+P _rwy_or_ramp ESKX 1
+P _rwy_or_ramp ESSA 0_1
+P _rwy_or_ramp ESSL 0_0
+P _fuel_tank __AircraftSK60sk60wacf_3 386.232819
+P _fuel_tank __AircraftSK60sk60wacf_2 386.232819
+P _fuel_tank __AircraftSK60sk60wacf_1 200.747162
+P _fuel_tank __AircraftSK60sk60wacf_0 200.747162
+P _payload _AircraftSK60sk60wacf 584.516968
+P _livery _AircraftSK60sk60wacf Default
+P _livery _AircraftLaminarResearchCessna172SPCessna172SPacf Default
+P _start_is_rwy ESKN 1
+P _start_is_rwy EFMA 1
+P _start_is_rwy ESSP 1
+P _start_is_rwy ESSB 1
+P _start_is_rwy ESKX 0
+P _start_is_rwy ESSA 1
+P _start_is_rwy ESSL 1
+P _cg _AircraftSK60sk60wacf 0.000000
+P _timestamp _AircraftSK60sk60wacf 1675811072.000000

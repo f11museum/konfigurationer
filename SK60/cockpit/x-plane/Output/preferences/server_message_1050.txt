@@ -1,0 +1,109 @@
+A
+1050 version
+MESSAGES
+
+VERSION_LOW: 110000 # You'll only see this message if your X-Plane version is at least 11.00
+VERSION_HIGH: 113012 # You will *not* get this message if you're at v11.30r1 or higher
+
+TYPE: LOADING # show the message on the loading screen
+
+MESSAGE: FREE UPDATE AVAILABLE
+MESSAGE: The X-Plane 11.30 update is now available. This is a major update, which includes all-new ATC voices, new visual effects for all default aircraft, over 1000 updated airports, and new landmark scenery for Dubai.
+MESSAGE: See the complete release notes online: X-Plane.com/1130
+
+
+VERSION_LOW: 113012 # You'll only see this message if your X-Plane version is at least 11.30r1
+VERSION_HIGH: 113300 # You will *not* get this message if you're at v11.33 or higher
+
+TYPE: LOADING # show the message on the loading screen
+
+MESSAGE: AIRPORTS, ATC, & MORE
+MESSAGE: X-Plane 11.30 includes all-new ATC voices, new visual effects for all default aircraft, over 1000 updated airports, and new landmark scenery for Dubai.
+MESSAGE: See the complete release notes online: X-Plane.com/1130
+
+
+VERSION_LOW: 113300 # You'll only see this message if your X-Plane version is at least 11.30r1
+VERSION_HIGH: 113400
+
+TYPE: LOADING # show the message on the loading screen
+
+MESSAGE: AIRPORTS GALORE!
+MESSAGE: X-Plane 11.33 includes over 2,500 airports with new or updated 3-D scenery, as well as more than 200 brand new airports.
+MESSAGE: See the complete release notes online: X-Plane.com/1133
+
+VERSION_LOW: 113500
+VERSION_HIGH: 113600
+TYPE: LOADING # show the message on the loading screen
+MESSAGE: AIRPORTS GALORE!
+MESSAGE: X-Plane 11.35 includes nearly 1,000 new & updated airports, FMOD sound for the Boeing B737-800 & King Air C90B, improved aircraft systems, and landmark scenery packs for New York & Washington D.C.
+MESSAGE: See the complete release notes online: X-Plane.com/1135
+
+VERSION_LOW: 113600
+VERSION_HIGH: 114000
+TYPE: LOADING
+MESSAGE: AIRPORTS GALORE!
+MESSAGE: X-Plane 11.35 brought nearly 1,000 new & updated airports, FMOD sound for the Boeing B737-800 & King Air C90B, improved aircraft systems, and landmark scenery packs for New York & Washington D.C.
+MESSAGE: See the complete list of version 11.36 bug fixes notes online: X-Plane.com/1136
+
+VERSION_LOW: 114000
+VERSION_HIGH: 114100
+TYPE: LOADING
+MESSAGE: FLIGHT MODEL IMPROVEMENTS
+MESSAGE: X-Plane 11.40 provides new flight model changes, including improved sea plane handling, stalling, and prop wash. Turn on the “Use experimental flight model” option in General Settings to try it.
+MESSAGE: See the complete release notes online: X-Plane.com/1140
+
+VERSION_LOW: 114100
+VERSION_HIGH: 115000
+TYPE: LOADING
+MESSAGE: FLIGHT MODEL IMPROVEMENTS
+MESSAGE: X-Plane 11.41 is a patch for the new flight model changes, including improved sea plane handling, stalling, and prop wash. Turn on the “Use experimental flight model” option in General Settings to try it.
+MESSAGE: See the complete release notes online: X-Plane.com/1141
+
+VERSION_LOW: 115000
+VERSION_HIGH: 115200
+TYPE: LOADING
+MESSAGE: RENDERING ENGINE REWRITE
+MESSAGE: X-Plane 11.50 rewrites the entire rendering engine to support the modern rendering APIs Vulkan and Metal. Toggle “Use Vulkan/Metal driver for faster rendering” on or off in Settings > Graphics. Most users will see higher frame rates, with greatly reduced stuttering.
+MESSAGE: See the complete release notes online: X-Plane.com/1150
+
+VERSION_LOW: 115200
+VERSION_HIGH: 115300
+TYPE: LOADING
+MESSAGE: RENDERING ENGINE REWRITE
+MESSAGE: X-Plane 11.52 is a patch for the rendering engine rewrite to support the modern rendering APIs Vulkan and Metal. Toggle “Use Vulkan/Metal driver for faster rendering” on or off in Settings > Graphics. Most users will see higher frame rates, with greatly reduced stuttering.
+MESSAGE: See the complete release notes online: X-Plane.com/1152
+
+VERSION_LOW: 115300
+VERSION_HIGH: 115500
+TYPE: LOADING
+MESSAGE: RENDERING ENGINE REWRITE
+MESSAGE: X-Plane 11.53 is a patch for the rendering engine rewrite to support the modern rendering APIs Vulkan and Metal. Toggle “Use Vulkan/Metal driver for faster rendering” on or off in Settings > Graphics. Most users will see higher frame rates, with greatly reduced stuttering.
+MESSAGE: See the complete release notes online: X-Plane.com/1153
+
+VERSION_LOW: 115500
+VERSION_HIGH: 120000
+TYPE: LOADING
+MESSAGE: X-PLANE 12 – NOW RELEASED
+MESSAGE: Featuring 3D Clouds, HDR Lighting, 3D Trees, Seasonal Effects and 7 new Aircraft
+MESSAGE: Join us: www.X-Plane.com/buy-it
+
+VERSION_LOW: 115500
+VERSION_HIGH: 120000
+TYPE: POPUP
+MESSAGE: X-Plane 12 – Now Released
+MESSAGE: Featuring 3D Clouds, HDR Lighting, 3D Trees, Seasonal Effects and 7 new Aircraft
+MESSAGE: Join us: www.X-Plane.com/buy-it
+
+#VERSION_LOW: 110000
+#VERSION_HIGH: 120000
+#
+#TYPE: LOADING # show the message on the loading screen
+#
+#MESSAGE: JOIN X-PLANE AT FLIGHTSIMEXPO 2019
+#MESSAGE: June 7-9 in Orlando, FL: Learn about WED 2.0 and the latest X-Plane news. Experience VR at our booth and try for a spot in the landing competition.
+#MESSAGE: Tickets & more information: FlightSimExpo.com
+
+
+
+
+

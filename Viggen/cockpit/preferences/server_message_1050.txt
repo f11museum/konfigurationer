@@ -1,0 +1,11 @@
+A
+1050 version
+MESSAGES
+
+VERSION_LOW: 120000
+VERSION_HIGH: 130000
+TYPE: LOADING
+MESSAGE: X-Plane 12 is here!
+MESSAGE: Now in official full release, X-Plane 12 introduces the next generation of ultra-realistic flight simulation. This release includes volumetric 3D clouds, a new lighting model based on physics, new aircraft, seasons, moving jetways and more.
+MESSAGE: Learn more online: X-Plane.com/1200
+

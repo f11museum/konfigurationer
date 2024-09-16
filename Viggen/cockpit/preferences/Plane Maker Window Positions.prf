@@ -1,0 +1,19 @@
+I
+10 Version
+num_monitors 1
+monitor/0/m_window_idx 0
+monitor/0/m_monitor 0
+monitor/0/m_window_bounds/0 48
+monitor/0/m_window_bounds/1 186
+monitor/0/m_window_bounds/2 1328
+monitor/0/m_window_bounds/3 954
+monitor/0/m_arbitrary_bounds/0 0
+monitor/0/m_arbitrary_bounds/1 0
+monitor/0/m_arbitrary_bounds/2 1280
+monitor/0/m_arbitrary_bounds/3 768
+monitor/0/m_bpp 0
+monitor/0/m_refresh_rate 0
+monitor/0/m_x_res_full 0
+monitor/0/m_y_res_full 0
+monitor/0/m_is_fullscreen wmgr_mode_window
+monitor/0/m_usage wmgr_usage_normal_visuals
