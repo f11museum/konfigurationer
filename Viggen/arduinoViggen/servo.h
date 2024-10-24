@@ -7,9 +7,16 @@ void setupServo(int pin) {
   myservos[pin].attach(pin); 
 }
 void setServo(int pin, int val) {
-//  pcSerial.println("Servo");
+  //pcSerial.print("Servo");
+  //pcSerial.println(val);
   //Servo myservo;
   //myservo.attach(pin); 
-  myservos[pin].write(val);
+  if (val <600) {
+    val = 600;
+  }
+  if (val>2600) {
+    val = 2600;
+  }
+  myservos[pin].writeMicroseconds(val);
   //delay(15); 
 }

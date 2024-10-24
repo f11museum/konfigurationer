@@ -50,7 +50,7 @@ IPAddress ip(192, 168, 0, 180);
 //#define TM1637
 
 // Servo
-//#define SERVO
+#define SERVO
 
 // Stepper motors
 // NOTE! You need to configure steppermotors in steppermotors.h
